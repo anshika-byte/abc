@@ -173,7 +173,56 @@ img {
     font-size: 2rem; /* Increased font size */
     border-radius: 0.25rem;
     animation: colorChange 3s infinite; /* Animation duration and repeat */
-}</style>
+}
+    html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+}
+
+.container-fluid, .container {
+    width: 100% !important;
+    padding: 0 !important; /* Remove extra padding */
+}
+
+.contact-section {
+    position: relative;
+    background-image: url('img/cons.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+    width: 100%; /* Ensure full width */
+    color: white;
+    text-align: center;
+    padding: 3rem 0; 
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        background-size: contain;
+        background-position: center center;
+        min-height: 400px;
+        padding: 2rem 0;
+    }
+}
+
+/* Navbar */
+.navbar, .navbar-collapse {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Full width for other sections */
+.section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+</style>
 
 </head>
 
