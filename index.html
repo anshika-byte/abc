@@ -117,19 +117,20 @@
     height: auto; /* Maintain aspect ratio and let height adjust */
     object-fit: cover; /* This ensures the image fills the container without stretching */
 }
+img {
+    max-width: 100%;   /* Ensures images take the full width of the parent container */
+    height: auto;      /* Maintains aspect ratio */
+}
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .carousel-item {
-        min-height: 200px; /* Reduce the minimum height for mobile devices */
-    }
-
     .carousel-item img {
-        object-fit: contain; /* On smaller screens, contain the entire image */
+        width: 100%;  /* Full width for mobile */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensures no stretching */
     }
 }
-
-/* For very small screens */
+/* Forvery small screens */
 @media (max-width: 480px) {
     .carousel-item {
         min-height: 150px; /* Further reduce height on very small screens */
@@ -188,25 +189,30 @@
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5 mb-5" id="home">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#header-carousel" data-slide-to="1"></li>
-                <li data-target="#header-carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" style="border: 5px solid black;">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/course.jpg" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="img/courses list.jpg" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="img/stu.jpg" alt="Slide 3">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#header-carousel" data-slide-to="1"></li>
+                        <li data-target="#header-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" style="border: 5px solid black;">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 img-fluid" src="img/course.jpg" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-fluid" src="img/courses list.jpg" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-fluid" src="img/stu.jpg" alt="Slide 3">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
     
     
     
