@@ -168,23 +168,33 @@ img {
 
    
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 sticky-navbar" style="position: sticky; top: 0; z-index: 1000;">
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse" style="background-color:rgb(253, 253, 253);">
-            <div class="navbar-nav py-0 mx-auto" style="max-width: 80%; display: flex; align-items: center;">
-                <!-- Animated text before Home -->
-                <span class="animated-text mr-3" >NC-CCIT</span>
-                
+   <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 sticky-navbar" style="position: sticky; top: 0; z-index: 1000;">
+    <!-- Navbar brand or logo -->
+    <a class="navbar-brand ml-3" href="#home">NC-CCIT</a>
 
-                <a href="#home" class="nav-item nav-link "><b>Home</b></a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#courses" class="nav-item nav-link">Courses</a>
-                <a href="#contact" class="nav-item nav-link">Contact Us</a>
-                <a href="#enquire" class="nav-item nav-link">Enquire</a>
-                <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
-            </div>
-            
+    <!-- Toggler button for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse" style="background-color:rgb(253, 253, 253);">
+        <div class="navbar-nav py-0 mx-auto" style="max-width: 80%; display: flex; align-items: center;">
+            <a href="#home" class="nav-item nav-link"><b>Home</b></a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#courses" class="nav-item nav-link">Courses</a>
+            <a href="#contact" class="nav-item nav-link">Contact Us</a>
+            <a href="#enquire" class="nav-item nav-link">Enquire</a>
+            <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
         </div>
-    </nav>
+    </div>
+</nav>
+
+    <!-- jQuery and Bootstrap JS for the Navbar toggling to work -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     
     <!-- Navbar End -->
 
