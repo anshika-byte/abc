@@ -168,27 +168,34 @@ img {
 
    
     <!-- Navbar Start -->
-   <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 sticky-navbar" style="position: sticky; top: 0; z-index: 1000;">
+  <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 sticky-navbar" 
+     style="position: sticky; top: 0; z-index: 1000; background-color: rgb(253, 253, 253); width: 100%;">
+  
     <!-- Navbar brand or logo -->
-    <a class="navbar-brand ml-3" href="#home">NC-CCIT</a>
+    <a class="navbar-brand ml-3" href="#home" style="font-weight: bold;">NC-CCIT</a>
 
     <!-- Toggler button for mobile view -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" 
+            style="border: none; outline: none;">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Collapsible content -->
-    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse" style="background-color:rgb(253, 253, 253);">
-        <div class="navbar-nav py-0 mx-auto" style="max-width: 80%; display: flex; align-items: center;">
-            <a href="#home" class="nav-item nav-link"><b>Home</b></a>
-            <a href="#about" class="nav-item nav-link">About</a>
-            <a href="#courses" class="nav-item nav-link">Courses</a>
-            <a href="#contact" class="nav-item nav-link">Contact Us</a>
-            <a href="#enquire" class="nav-item nav-link">Enquire</a>
-            <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse" 
+         style="background-color:rgb(253, 253, 253); max-width: 100%; padding-left: 0; padding-right: 0;">
+        <div class="navbar-nav py-0 mx-auto" 
+             style="display: flex; align-items: center; flex-wrap: wrap; justify-content: space-around;">
+            <a href="#home" class="nav-item nav-link" style="padding: 0.5rem; font-weight: bold;">Home</a>
+            <a href="#about" class="nav-item nav-link" style="padding: 0.5rem;">About</a>
+            <a href="#courses" class="nav-item nav-link" style="padding: 0.5rem;">Courses</a>
+            <a href="#contact" class="nav-item nav-link" style="padding: 0.5rem;">Contact Us</a>
+            <a href="#enquire" class="nav-item nav-link" style="padding: 0.5rem;">Enquire</a>
+            <a href="#testimonials" class="nav-item nav-link" style="padding: 0.5rem;">Testimonials</a>
         </div>
     </div>
 </nav>
+
 
     <!-- jQuery and Bootstrap JS for the Navbar toggling to work -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
