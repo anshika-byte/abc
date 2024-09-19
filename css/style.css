@@ -1,10 +1,3 @@
-/******* Bootstrap Theming ********/
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -312,6 +305,34 @@ legend {
   color: inherit;
   white-space: normal;
 }
+@media (max-width: 768px) {
+  .contact-title {
+      font-size: 1.8rem; /* Smaller font size for mobile */
+  }
+
+  .carousel-item img {
+      height: 200px; /* Adjust carousel height for smaller screens */
+  }
+
+  .container-fluid {
+      padding: 15px; /* Reduce padding on mobile screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+      padding: 1rem 0; /* Even smaller padding for very small screens */
+  }
+
+  .carousel-item img {
+      height: 150px; /* Further adjust carousel height */
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 @media (max-width: 1200px) {
   legend {
@@ -5068,7 +5089,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-info {
   color: #0c5460;
-  background-color: #d1ecf1;
+  background-color:rgb(254, 197, 187);
   border-color: #bee5eb;
 }
 
@@ -6231,8 +6252,8 @@ a.close.disabled {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 0;
-  left: 0;
+  bottom: -530px;
+  left: 600px;
   z-index: 15;
   display: flex;
   justify-content: center;
@@ -6355,7 +6376,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #FF6600 !important;
+  background-color: rgb(214, 40, 40) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -7688,10 +7709,7 @@ button.bg-dark:focus {
   margin-right: 1.5rem !important;
 }
 
-.mb-4,
-.my-4 {
-  margin-bottom: 1.5rem !important;
-}
+
 
 .ml-4,
 .mx-4 {
@@ -7856,10 +7874,7 @@ button.bg-dark:focus {
   padding-right: 3rem !important;
 }
 
-.pb-5,
-.py-5 {
-  padding-bottom: 3rem !important;
-}
+
 
 .pl-5,
 .px-5 {
@@ -9525,7 +9540,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #FF6600 !important;
+  color:rgb(214, 40, 40) !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9792,7 +9807,7 @@ h6,
   right: 0;
   bottom: 0;
   text-align: left;
-  background: rgba(0, 0, 0, 0.5);
+
   z-index: 1;
 }
 
@@ -9802,7 +9817,7 @@ h6,
   right: calc(100% - 60px);
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -9812,12 +9827,12 @@ h6,
   height: 25px;
   margin: 5px 0;
   background: #44425A;
-  border: 5px solid #FFFFFF;
-  border-radius: 25px;
+  border: 5px solid black;
+  border-radius: 50%;
 }
 
 .carousel-indicators .active {
-  background: #FF6600;
+  background: rgb(254, 250, 224);
 }
 
 @media (max-width: 991.98px) {
