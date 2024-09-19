@@ -67,14 +67,26 @@
     .contact-section {
     position: relative;
     background-image: url('img/cons.webp');
-    background-size: cover;
-    height: 600px;   
-    background-size: cover;
+    background-size: contain; /* Ensures the full image is visible */
+    background-repeat: no-repeat; /* Prevents image from repeating */
     background-position: center;
+    min-height: 600px; /* Minimum height for large screens */
+    width: 100%; /* Full width */
     color: white;
     text-align: center;
     padding: 3rem 0; /* Adjust padding as needed */
 }
+
+/* Media query to adjust for mobile devices */
+@media (max-width: 768px) {
+    .contact-section {
+        background-size: contain; /* Ensures the image fits within the section */
+        background-position: center center; /* Keep the image centered */
+        min-height: 400px; /* Adjust height for mobile view */
+        padding: 2rem 0; /* Reduce padding for smaller screens */
+    }
+}
+
 
 .contact-section .overlay {
     position: absolute;
