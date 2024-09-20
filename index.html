@@ -3,8 +3,6 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
     <meta charset="utf-8">
     <title>NCCIT</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -17,7 +15,7 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -27,215 +25,122 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    
-<style>
 
+    <style>
+        /* General Styles */
+        html, body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-    .whatsapp-float {
-        position: fixed;
-        bottom: 10px; /* Adjust this value to move it up/down */
-        right: 1280px; /* Adjust this value to move it left/right */
-        background-color: #25D366; /* WhatsApp green */
-        color: white;
-        border-radius: 150%;
-        padding: 15px;
-        font-size: 30px;
-        z-index: 100; /* Ensure it stays on top of other elements */
-        text-align: center;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow */
-    }
+        .container-fluid, .container {
+            width: 100% !important;
+            padding: 0 !important; /* Remove extra padding */
+        }
 
-    .whatsapp-float:hover {
-        background-color: #128C7E; /* Darker green on hover */
-        color: white;
-        text-decoration: none;
-    }
-    .map-container {
-        margin-top: 20px;
-        text-align: center;
-    }
-    
-    .map-container iframe {
-        width: 100%;
-        height: 400px; /* Adjust height as needed */
-        border: 0;
-    }
-    
-    .contact-address
-    {
-        color: rgb(254, 250, 224);; 
-    }
-    .contact-section {
-    position: relative;
-    background-image: url('img/cons.webp');
-    background-size: contain; /* Ensures the full image is visible */
-    background-repeat: no-repeat; /* Prevents image from repeating */
-    background-position: center;
-    min-height: 600px; /* Minimum height for large screens */
-    width: 100%; /* Full width */
-    color: white;
-    text-align: center;
-    padding: 3rem 0; /* Adjust padding as needed */
-}
+        body {
+            background-color: rgb(255, 229, 217);
+        }
 
-/* Media query to adjust for mobile devices */
-@media (max-width: 768px) {
-    .contact-section {
-        background-size: contain; /* Ensures the image fits within the section */
-        background-position: center center; /* Keep the image centered */
-        min-height: 400px; /* Adjust height for mobile view */
-        padding: 2rem 0; /* Reduce padding for smaller screens */
-    }
-}
+        /* Navbar */
+        .navbar, .navbar-collapse {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
 
-
-.contact-section .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Adjust the opacity here (0.3 is 30% opacity) */
-    z-index: 1;
-}
-
-.contact-section .container {
-    position: relative;
-    z-index: 2; /* Make sure the text is above the overlay */
-    
-}
-
-.contact-title {
-    font-size: 2.5rem; /* Adjust size as needed */
-    color: rgb(254, 250, 224); /* Yellow color for the heading */
-}
-
-.contact-info {
-    font-size: 1.25rem; /* Adjust size as needed */
-    color: black; /* Black color for the paragraph */
-}
-
-.contact-info a {
-    color:rgb(254, 250, 224); /* Red color for phone number and email */
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Make sure carousel images scale properly */
-.carousel-item img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio and let height adjust */
-    object-fit: cover; /* This ensures the image fills the container without stretching */
-}
-img {
-    max-width: 100%;   /* Ensures images take the full width of the parent container */
-    height: auto;      /* Maintains aspect ratio */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .carousel-item img {
-        width: 100%;  /* Full width for mobile */
-        height: auto; /* Maintain aspect ratio */
-        object-fit: cover; /* Ensures no stretching */
-    }
-}
-/* Forvery small screens */
-@media (max-width: 480px) {
-    .carousel-item {
-        min-height: 150px; /* Further reduce height on very small screens */
-    }
-}
-
-
-
-
-
-    
-    
-    
-    @keyframes colorChange {
-    0% { color: red; }
-    33% { color: blue; }
-    67% { color: green; }
-    100% { color: red; }
-}
-
-/* Applying animation to the text */
-.animated-text {
-    color: dark; /* Base color */
-    font-weight: bold;
-    background-color: #fff; /* Optional: background color for contrast */
-    padding: 0.5rem 1rem;
-    font-size: 2rem; /* Increased font size */
-    border-radius: 0.25rem;
-    animation: colorChange 3s infinite; /* Animation duration and repeat */
-}
-    html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Ensure no horizontal scroll */
-}
-
-.container-fluid, .container {
-    width: 100% !important;
-    padding: 0 !important; /* Remove extra padding */
-}
-
-.contact-section {
-    position: relative;
-    background-image: url('img/cons.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 600px;
-    width: 100%; /* Ensure full width */
-    color: white;
-    text-align: center;
-    padding: 3rem 0; 
-}
-
-@media (max-width: 768px) {
-    .contact-section {
-        background-size: contain;
-        background-position: center center;
-        min-height: 400px;
-        padding: 2rem 0;
-    }
-}
-
-/* Navbar */
-.navbar, .navbar-collapse {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-    .sticky-navbar {
+        .sticky-navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
-/* Full width for other sections */
-.section {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
+        /* Responsive layout for Navbar */
+        @media (max-width: 768px) {
+            .navbar {
+                background-color: rgb(255, 229, 217); /* Ensure navbar background is visible on mobile */
+            }
+        }
 
-</style>
+        /* Carousel */
+        .carousel-item img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio and let height adjust */
+            object-fit: cover; /* Ensures the image fills the container without stretching */
+        }
 
+        img {
+            max-width: 100%;
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        /* About section styles */
+        .about-section {
+            display: flex;
+            flex-wrap: wrap; /* Ensure it adjusts on smaller screens */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-section .col-lg-5 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .about-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 768px) {
+            .about-section .col-lg-5 {
+                flex: 0 0 40%;
+                max-width: 40%;
+            }
+            .about-section .col-lg-7 {
+                flex: 0 0 55%;
+                max-width: 55%;
+            }
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .carousel-item img {
+                width: 100%;  /* Full width for mobile */
+                height: auto; /* Maintain aspect ratio */
+                object-fit: cover; /* Ensures no stretching */
+            }
+
+            .contact-section {
+                background-size: contain; /* Ensure the image fits within the section */
+                background-position: center center;
+                min-height: 400px; /* Adjust height for mobile view */
+                padding: 2rem 0; /* Reduce padding for smaller screens */
+            }
+        }
+
+        /* Adjust images in About section */
+        .d-flex img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .d-flex {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
-<body style="background-color: rgb(255, 229, 217);" >
+<body>
 
-   
     <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-navbar">
         <a class="navbar-brand ml-3" href="#home" style="font-weight: bold;">NC-CCIT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -253,17 +158,6 @@ img {
             </div>
         </div>
     </nav>
-
-
-    <!-- jQuery and Bootstrap JS for the Navbar toggling to work -->
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-    
-    <!-- Navbar End -->
-
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5 mb-5" id="home">
@@ -290,24 +184,19 @@ img {
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    <!-- Carousel End -->
 
     <!-- About Start -->
     <div class="container-fluid py-5" id="about" style="background-color: rgb(255, 229, 217);">
         <div class="container py-5">
-            <div class="row align-items-center">
+            <div class="about-section row align-items-center">
                 <div class="col-lg-5">
                     <div class="container">
                         <div class="d-flex" style="border: 3px solid rgb(8, 8, 8);">
                             <div class="me-3">
-                                <img style="width: 300px; height: 300px; border: 10px" class="img-fluid rounded mb-4" src="img/team-4.jpg" alt="">
+                                <img class="img-fluid rounded mb-4" src="img/team-4.jpg" alt="">
                             </div>
                             <div>
-                                <img style="width: 300px; height: 300px;" class="img-fluid rounded mb-4" src="img/nee.jpeg" alt="">
+                                <img class="img-fluid rounded mb-4" src="img/nee.jpeg" alt="">
                             </div>
                         </div>
                     </div>
@@ -315,368 +204,28 @@ img {
                 <div class="col-lg-7">
                     <div class="text-left mb-4">
                         <h1 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">WELCOME TO NC-CCIT</h1>
-                        
                     </div>
                     <div class="d-flex justify-content-between mb-4">
-                        <!-- Manav Sharma Section -->
                         <div class="flex-fill mr-4">
-                            <h2 style="color:rgb(26, 41, 10) ;">Manav Sharma</h2>
-                            <p style="color: black;font-weight: bolder;">BSC(MATHS) <br> MBA(MARKETING & FINANCE) </p>
+                            <h2 style="color:rgb(26, 41, 10);">Manav Sharma</h2>
+                            <p style="color: black; font-weight: bolder;">BSC(MATHS)<br> MBA(MARKETING & FINANCE)</p>
                         </div>
-                        <!-- Neetu Sharma Section -->
                         <div class="flex-fill">
-                            <h2 style="color:rgb(26, 41, 10) ;" >Neetu Sharma</h2>
-                            <p style="color: black; font-weight: bolder;">BSC(PATHO) <br>   BAJM  <br>   MA(ECO)  <br>  MBA(HRM)</p>
+                            <h2 style="color:rgb(26, 41, 10);">Neetu Sharma</h2>
+                            <p style="color: black; font-weight: bolder;">BSC(PATHO) <br> BAJM <br> MA(ECO) <br> MBA(HRM)</p>
                         </div>
                     </div>
-                  
                 </div>
-                
             </div>
         </div>
     </div>
     <!-- About End -->
 
+    <!-- jQuery and Bootstrap JS for the Navbar toggling to work -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Category Start -->
-    <div class="container-fluid py-5" id="courses">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-5">
-                <h1 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">COURSES</h1>
-                <h1 style="color:rgb(26, 41, 10) ;">Explore Top Courses</h1>
-                <p style="color:rgb(0, 0, 0) ;">click on courses for more information</p>
-            </div>
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-5.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="bba.html" target="_blank">
-                            <h4 class="text-white font-weight-medium">BBA</h4>
-                            
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="bca.html"target="_blank">
-                            <h4 class="text-white font-weight-medium">BCA</h4>
-                          
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="bcom.html"target="_blank">
-                            <h4 class="text-white font-weight-medium">B.Com</h4>
-                           
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/course-3.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="ba.html"target="_blank">
-                            <h4 class="text-white font-weight-medium">BA</h4>
-                            
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-6.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="mba.html"target="_blank">
-                            <h4 class="text-white font-weight-medium">MBA</h4>
-                            
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-8.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="mca.html"target="_blank">
-                            <h4 class="text-white font-weight-medium">MCA</h4>
-                           
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-4.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="mcom.html"target="_blank">
-                            <h4 class="text-white font-weight-medium">M.Com</h4>
-                           
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-7.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="ma.html"target="_blank">
-                            <h4 class="text-white font-weight-medium">MA</h4>
-                          
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="bcom(hons).html"target="_blank">
-                            <h4 class="text-white font-weight-medium">B.COM(HONS)</h4>
-                            
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/course-5.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="ba(jmc).html"target="_blank">
-                            <h4 class="text-white font-weight-medium">BA(JMC)</h4>
-                           
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/course-1.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="m.lib.html"target="_blank">
-                            <h4 class="text-white font-weight-medium">M.LIB</h4>
-                           
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/course-2.jpg" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="msw.html"target="_blank">
-                            <h4 class="text-white font-weight-medium">MSW</h4>
-                          
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <!-- Category Start -->
-         <!-- contact  -->
-
-    <div class="contact-section py-5" id="contact">
-        <div class="overlay"></div>
-        <div class="container py-5">
-            <h2 class="contact-title mb-4">CONTACT US</h2>
-            <p class="contact-info mb-4">
-                <a href="tel:+918756245801" class="text-red text-decoration-none">8756245801</a><br>
-                <a href="mailto:nets.shrma18@yahoo.com" class="text-red text-decoration-none">nets.shrma18@yahoo.com</a><br>
-                <span class="contact-address">ADDRESS- MALL ROAD, KANPUR</span>
-            </p>
-        </div>
-    </div>
-    
-    <!-- GMAP -->
-    
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7412.869526086408!2d80.3470851!3d26.473289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c38a8fbc18b2d%3A0xa1100ec1aa41d4f6!2sCivil%20Lines%2C%20Kanpur%2C%20Uttar%20Pradesh%20208001!5e0!3m2!1sen!2sin!4v1694597823561!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-    
-    
-    
-    
-
-
-    
-
-    <!-- Registration Start -->
-    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;"id="enquire" >
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-7 mb-5 mb-lg-0">
-                    <div class="mb-4">
-                        <h3 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;"><b>Need Any Courses</b></h3>
-                        <h1 style="color: rgb(243, 207, 191);">Fill in the form and get your query resolved ASAP!</h1>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-5">
-                    <div class="card border-0">
-                        <div class="card-header bg-light text-center p-4">
-                            <h1 class="m-0" style="color:rgb(26, 41, 10) ;">ENQUIRE US </h1>
-                        </div>
-                        <div class="card-body rounded-bottom bg-primary p-5">
-                            <form action="https://formspree.io/f/meojwkbn" method="POST">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control border-0 p-4" placeholder="Your name" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" name="phone" class="form-control border-0 p-4" placeholder="Your phone number" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control border-0 p-4" placeholder="Your email" />
-                                </div>
-                                <div class="form-group">
-                                    <select name="course" class="custom-select border-0 px-4" style="height: 47px;" required="required">
-                                        <option value="" disabled selected>Select a course</option>
-                                        <option value="BBA">BBA</option>
-                                        <option value="BCA">BCA</option>
-                                        <option value="B.Com">B.Com</option>
-                                        <option value="BA">BA</option>
-                                        <option value="MBA">MBA</option>
-                                        <option value="MCA">MCA</option>
-                                        <option value="M.com">M.Com</option>
-                                        <option value="MA">MA</option>
-                                        <option value="B.Com">B.Com(HONS)</option>
-                                        <option value="BA(JMC)">BA(JMC)</option>
-                                        <option value="M.LIB">M.LIB</option>
-                                        <option value="MSW">MSW</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit" style="background-color: rgb(204, 168, 152); color:black;"><h3>Submit</h3></button>
-                                </div>
-                            </form>
-                            
-                                        
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Registration End -->
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5" id="testimonials">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
-                <h1 style="color:rgb(26, 41, 10) ;">What Say Our Students</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-    <a href="https://wa.me/8756245801" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px; ">
-        <div class="row pt-5">
-            <div class="col-lg-7 col-md-12">
-                <div class="row">
-                    <div class="col-md-6 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>MALL ROAD KANPUR</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+91-8756245801</p>
-                        <p><i class="fa fa-envelope mr-2"></i>nets.shrma18@gmail.com</p>
-                        <div class="d-flex justify-content-start mt-4">
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Courses</h5>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 d-flex flex-column">
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>BBA</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>BCA</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>B.Com</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>BA</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>MBA</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>MSW</a>
-                                </div>
-                                <div class="col-lg-6 d-flex flex-column">
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>MCA</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>M.Com</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>MA</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>B.COM(HONS)</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>BA(JMC)</a>
-                                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>M.LIB</a>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="row">
-            
-            <div class="col-lg-6 text-center text-md-right">
-                <ul class="nav d-inline-flex">
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Help</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>
