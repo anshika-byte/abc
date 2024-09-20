@@ -107,20 +107,41 @@
         }
 
         /* Media query for smaller screens */
-        @media (max-width: 768px) {
-            .carousel-item img {
-                width: 100%;  /* Full width for mobile */
-                height: auto; /* Maintain aspect ratio */
-                object-fit: cover; /* Ensures no stretching */
-            }
+        /* About Section for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-section .row {
+        flex-direction: column; /* Stack the content vertically */
+    }
 
-            .contact-section {
-                background-size: contain; /* Ensure the image fits within the section */
-                background-position: center center;
-                min-height: 400px; /* Adjust height for mobile view */
-                padding: 2rem 0; /* Reduce padding for smaller screens */
-            }
-        }
+    .contact-section .col-lg-5,
+    .contact-section .col-lg-7 {
+        width: 100%; /* Ensure full width for mobile */
+        text-align: center; /* Center-align the content */
+    }
+
+    .contact-section img {
+        width: 100% !important; /* Make images take up full width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add some space between images */
+    }
+
+    .contact-section .d-flex {
+        flex-direction: column; /* Stack images on top of each other */
+    }
+
+    .contact-section .flex-fill {
+        margin-bottom: 20px; /* Add spacing between text sections */
+    }
+
+    .contact-title {
+        font-size: 1.8rem; /* Reduce font size for mobile */
+    }
+
+    .contact-info {
+        font-size: 1rem; /* Adjust text size for mobile */
+    }
+}
+
 
         /* Adjust images in About section */
         .d-flex img {
@@ -186,39 +207,42 @@
     </div>
 
     <!-- About Start -->
-    <div class="container-fluid py-5" id="about" style="background-color: rgb(255, 229, 217);">
-        <div class="container py-5">
-            <div class="about-section row align-items-center">
-                <div class="col-lg-5">
-                    <div class="container">
-                        <div class="d-flex" style="border: 3px solid rgb(8, 8, 8);">
-                            <div class="me-3">
-                                <img class="img-fluid rounded mb-4" src="img/team-4.jpg" alt="">
-                            </div>
-                            <div>
-                                <img class="img-fluid rounded mb-4" src="img/nee.jpeg" alt="">
-                            </div>
+   <div class="container-fluid py-5" id="about" style="background-color: rgb(255, 229, 217);">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="container">
+                    <div class="d-flex" style="border: 3px solid rgb(8, 8, 8);">
+                        <div class="me-3">
+                            <img style="width: 100%; height: auto;" class="img-fluid rounded mb-4" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div>
+                            <img style="width: 100%; height: auto;" class="img-fluid rounded mb-4" src="img/nee.jpeg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="text-left mb-4">
-                        <h1 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">WELCOME TO NC-CCIT</h1>
+            </div>
+            <div class="col-lg-7">
+                <div class="text-left mb-4">
+                    <h1 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">WELCOME TO NC-CCIT</h1>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                    <!-- Manav Sharma Section -->
+                    <div class="flex-fill mr-4">
+                        <h2 style="color:rgb(26, 41, 10);">Manav Sharma</h2>
+                        <p style="color: black; font-weight: bolder;">BSC(MATHS) <br> MBA(MARKETING & FINANCE)</p>
                     </div>
-                    <div class="d-flex justify-content-between mb-4">
-                        <div class="flex-fill mr-4">
-                            <h2 style="color:rgb(26, 41, 10);">Manav Sharma</h2>
-                            <p style="color: black; font-weight: bolder;">BSC(MATHS)<br> MBA(MARKETING & FINANCE)</p>
-                        </div>
-                        <div class="flex-fill">
-                            <h2 style="color:rgb(26, 41, 10);">Neetu Sharma</h2>
-                            <p style="color: black; font-weight: bolder;">BSC(PATHO) <br> BAJM <br> MA(ECO) <br> MBA(HRM)</p>
-                        </div>
+                    <!-- Neetu Sharma Section -->
+                    <div class="flex-fill">
+                        <h2 style="color:rgb(26, 41, 10);">Neetu Sharma</h2>
+                        <p style="color: black; font-weight: bolder;">BSC(PATHO) <br> BAJM <br> MA(ECO) <br> MBA(HRM)</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <!-- About End -->
 
     <!-- jQuery and Bootstrap JS for the Navbar toggling to work -->
