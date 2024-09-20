@@ -26,6 +26,18 @@
             top: 0;
             z-index: 1000;
         }
+         .carousel-item img {
+            width: 100%;
+            height: 400px; /* Default height for larger screens */
+            object-fit: cover; /* Ensures image fills the container without stretching */
+        }
+
+        /* Increase height on smaller screens (phones) */
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 600px; /* Increase height to 1.5 times the default on phones */
+            }
+        }
 
         /* Other styles you might have */
     </style>
@@ -54,7 +66,7 @@
     </nav>
 
 
-    <div class="container-fluid p-0 pb-5 mb-5" id="home">
+     <div class="container-fluid p-0 pb-5 mb-5" id="home">
         <div class="row">
             <div class="col-sm-12">
                 <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -78,7 +90,6 @@
             </div>
         </div>
     </div>
-
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
