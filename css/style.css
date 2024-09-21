@@ -9925,7 +9925,7 @@ h6,
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  background: #FF6600;
+  background:beige;
 }
 
 .testimonial-carousel .owl-dot::after {
@@ -9935,12 +9935,12 @@ h6,
   right: -5px;
   bottom: -5px;
   left: -5px;
-  border: 2px solid #FF6600;
+  border: 2px solid  black;
   border-radius: 20px;
 }
 
 .testimonial-carousel .owl-dot.active {
-  background: #44425A;
+  background: rgb(134, 3, 3);
 }
 
 .blog-item img {
