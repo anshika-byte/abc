@@ -85,7 +85,7 @@
     }
     
     .hero h1, .hero h2, .hero h3 {
-        margin: 0;
+        margin: 20px;
         padding: 0;
     }
     
@@ -202,18 +202,132 @@
 -->
 
 
-<div class="hero" style="background-image: url('img/course-3.jpg'); border:10px solid black;background-size: cover; background-position: center; opacity: 2">
+<!-- Main Container for Hero Section -->
+<!-- Main Container for Hero Section with Background Overlay -->
+<div class="hero">
+    <div class="overlay"></div> <!-- Overlay for better text visibility -->
     <div class="text-center">
-        <h1 style="color:white; margin-top: -200px;">B.B.A. - Bachelor of Business Administration</h1>
+        <!-- Title Text -->
+        <h1>B.B.A. - Bachelor of Business Administration</h1>
 
-        
-
-        <h2><a href="index.html#enquire" class="btn btn-custom mt-2" style="background-color: yellow;"><h3>Apply Now</h3></a></h2>
-        <br>   
-   
+        <!-- Apply Now Button -->
+        <h2 >
+            <a href="index.html#enquire" class="btn btn-custom mt-2" style="background-color:rgb(255, 238, 0);">
+                <h3 style="color:rgb(255, 0, 0);">Apply Now</h3>
+            </a>
+        </h2>
     </div>
 </div>
-<h2 style="color:rgb(2, 2, 2);background-color:rgb(255, 229, 217); text-align: center;">NAAC A+ accredited    &nbsp&nbsp&nbsp&nbsp;UGC-entitled</h2>
+
+<!-- CSS for Styling -->
+<style>
+  /* Ensure proper scaling on all devices */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Hero Section Styling */
+  .hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('img/course-3.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 10px solid black;
+    position: relative;
+  }
+
+  /* Overlay to darken background for better text readability */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+  }
+
+  /* Text Centering and Styling */
+  .text-center {
+    position: relative;
+    z-index: 2; /* Ensures text appears above overlay */
+    text-align: center;
+  }
+
+  /* Title Text Styling */
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    margin-top: -50px;
+  }
+
+  /* Apply Now Button Styling */
+  h2 a {
+    background-color: yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .hero {
+      height: auto;
+      padding: 50px 20px;
+      border-width: 5px; /* Adjust border width for smaller screens */
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: -100px;
+      padding: 0 10px;
+    }
+
+    h2 a {
+      padding: 8px 15px;
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  /* Additional media query for extra small screens */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+      margin-top: -80px;
+    }
+
+    h2 a {
+      padding: 6px 10px;
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+</style>
+
+
+
+
+
+
+<h3 style="color:rgb(2, 2, 2);background-color:rgb(255, 229, 217); text-align: center;">NAAC A+ accredited    &nbsp&nbsp&nbsp&nbsp;UGC-entitled</h3>
 
 
 	
