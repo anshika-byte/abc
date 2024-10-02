@@ -1,529 +1,827 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Integral University Online B.B.A. Program">
-	<meta name="author" content="WEBINFOMAX">
-	<title> BBA - NCCIT</title>
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZZKC4EPQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-	<!-- Favicons-->
-    <link rel="stylesheet" href="styles.css">
-	<link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
-	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+  gtag('config', 'G-MZZKC4EPQW');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <meta charset="utf-8">
+    <title>NCCIT</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
     
-    <!-- GOOGLE WEB FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
-
-	<!-- BASE CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/menu.css" rel="stylesheet">
-	<link href="css/vendors.css" rel="stylesheet">
-	<link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
-   
-    <!-- SPECIFIC CSS -->
-    <link href="css/date_picker.css" rel="stylesheet">
-    
-	<!-- YOUR CUSTOM CSS -->
-	<link href="css/custom.css" rel="stylesheet">
-	<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
-	<style>
-	item
-	{
-		border:1px solid black;
-		padding:30px;
-		border-radius:10px;
-		box-shadow:2px 4px 6px black;
-		margin:10px;
-	}
-	.item img
-	{
-		height:105px;
-		
-	}
-	#ab>.item
-	{
-		padding:10px;
-	}
-.blist li:before {
-  content: '\f058';
-  font-family: 'FontAwesome';
-  float: left;
-  margin-left: -1.5em;
-  color: black;
-}
-
-.table-bordered,.table-bordered td,.table-bordered th
-{
-	border:3px solid #09014a;
-}
-	</style>
-</head>
-
-<body style="background-color: rgb(255, 229, 217);"">
-
-	<!--<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64fed4e6ab24060019dda16c&product=sop' async='async'></script>-->
 <style>
-    .hero {
-        background-image: url('img/course-3.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 100vh; /* Adjust height as needed */
-        color: white; /* Optional: To ensure text is readable against the background */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 10px; /* Keeps it at the bottom */
+        left: 0px; /* Shift it to the far right end */
+        background-color: #25D366; /* WhatsApp green */
+        color: white;
+        border-radius: 50%; /* Circular button */
+        padding: 15px;
+        font-size: 30px;
+        z-index: 100; /* Ensure it stays on top of other elements */
+        text-align: center;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+    }
+    
+    .whatsapp-float:hover {
+        background-color: #128C7E; /* Darker green on hover */
+        color: white;
+        text-decoration: none;
+    }
+    
+    /* Media query for mobile responsiveness */
+    @media (max-width: 768px) {
+        .whatsapp-float {
+            left: 0px; /* Slight adjustment for mobile, closer to the edge */
+            bottom: 20px; /* Adjust bottom spacing */
+        }
+    }
+    
+    
+    .map-container {
+        margin-top: 20px;
         text-align: center;
     }
     
-    .hero h1, .hero h2, .hero h3 {
-        margin: 20px;
-        padding: 0;
+    .map-container iframe {
+        width: 100%;
+        height: 400px; /* Adjust height as needed */
+        border: 0;
+    }
+    
+    .contact-address {
+        color: rgb(255, 255, 255);
+    }
+    
+    /* Main section styles */
+    .contact-section {
+        position: relative;
+        background-image: url('img/cont.jfif');
+        background-size: cover; /* Ensures the image covers the entire section */
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 500px; /* Minimum height for larger screens */
+        width: 100%; /* Full width */
+        color: rgb(241, 236, 241);
+        text-align: center;
+        padding: 3rem 0; /* Adjust padding as needed */
+    }
+    
+    /* Overlay to darken the background image */
+    .contact-section .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Increased opacity to improve readability */
+        z-index: 1;
+    }
+    
+    /* Container for text content */
+    .contact-section .container {
+        position: relative;
+        z-index: 2; /* Ensure content is above the overlay */
+    }
+    
+    /* Title styling */
+    .contact-title {
+        font-size: 2.5rem; /* Adjust size as needed */
+        color: rgb(255, 255, 255);/* Yellow color for the heading */
+    }
+    
+    /* Info (phone, email, address) styling */
+    .contact-info {
+        font-size: 1.25rem; /* Adjust size as needed */
+        color: rgb(255, 255, 255); /* Set appropriate text color */
+    }
+    
+    .contact-info a {
+        color: rgb(255, 255, 255); /* Yellow color for phone number and email */
+        font-weight: bold;
+    }
+    
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Responsive adjustments for mobile */
+    @media (max-width: 768px) {
+        .contact-section {
+            background-size: cover; /* Image covers full width on mobile */
+            background-position: center center;
+            min-height: 400px; /* Adjust height for mobile */
+            padding: 2rem 0; /* Reduce padding on smaller screens */
+        }
+    
+        .contact-title {
+            font-size: 2rem; /* Smaller font size for mobile */
+        }
+    
+        .contact-info {
+            font-size: 1rem; /* Adjust info font size for mobile */
+        }
     }
     
 
-@media screen and (max-width: 1900px) {
-	.my-head
-	{
-		max-width:1600px;
-		padding:0;
-		margin:0;
-	}
-	#title1{
-		font-weight:bold;font-size:22px;margin-left:60px;
-	}
-	#title2
-	{
-		font-weight:bold;font-size:16px;margin-left:60px
-	}
-	#in-logo{
-		margin-left:35px;
-	}
-	.nave-top
-	{
-		text-align:right;	
-	}
-	.nave-top a
-	{
-		background:gold;
-		color:black;
-		text-decoration:none;
-		padding:10px 20px;
-		border-radius:20px 3px 3px 3px;
-		font-weight:bold;
-	}
-	.nave-top a:hover
-	{
-		border-radius:3px;
-	}
-	#link_1,#link_2,#link_2
-	{
-		
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.hide_this
-	{
-		display:none;
-	}
-	#title1{
-		font-size:1.2em;
-		margin-left:5px;
-		font-weight:bold;
-	}
-	#in-logo{
-		margin-left:5px;
-	}
-	#title2
-	{
-		font-size:1em;
-		margin-left:5px;
-	}
-	.nave-top
-	{
-		text-align:right;	
-	
-	}
-	.nave-top a
-	{
-		background:gold;
-		color:black;
-		text-decoration:none;
-		border-radius:20px 3px 3px 3px;
-		font-weight:bold;
-		float:left;
-		font-size:.7em;
-		padding:8px;
-	}
-	.nave-top a:hover
-	{
-		border-radius:3px;
-	}
-	#link_1,#link_2,#link_3
-	{
-		margin-left:2px;
-		float:right;
-	}
-	#para_title	
-	{
-		text-align:center;
-	}
-	
-}
-/*
-@media screen and (max-width: 600px) {
-  #top-bar{
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 28%;
-    display: none;
-  }
-}
-*/
-}
-</style>
-<!--
-<div style="width:100%;color:white;padding-top:7px;height:35px;background: rgb(225,235,62);background: linear-gradient(199deg, rgba(225,235,62,1) 0%, rgba(38,195,70,1) 53%, rgba(3,167,36,1) 92%);">
-	<span style="margin-left:30px;font-weight:bold">	
-		
-	</span>
-</div>
--->
-
-
-<!-- Main Container for Hero Section -->
-<!-- Main Container for Hero Section with Background Overlay -->
-<div class="hero">
-    <div class="overlay"></div> <!-- Overlay for better text visibility -->
-    <div class="text-center">
-        <!-- Title Text -->
-        <h1>B.B.A. - Bachelor of Business Administration</h1>
-
-        <!-- Apply Now Button -->
-        <h2 >
-            <a href="index.html#enquire" class="btn btn-custom mt-2" style="background-color:rgb(255, 238, 0);">
-                <h3 style="color:rgb(255, 0, 0);">Apply Now</h3>
-            </a>
-        </h2>
-    </div>
-</div>
-
-<!-- CSS for Styling -->
-<style>
-  /* Ensure proper scaling on all devices */
-  * {
-    box-sizing: border-box;
-  }
-
-  /* Hero Section Styling */
-  .hero {
+/* Make sure carousel images scale properly */
+.carousel-item img {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-image: url('img/course-3.jpg');
-    background-size: cover;
-    background-position: center;
-    border: 10px solid black;
-    position: relative;
-  }
+    height: auto; /* Maintain aspect ratio and let height adjust */
+    object-fit: cover; /* This ensures the image fills the container without stretching */
+}
+img {
+    max-width: 100%;   /* Ensures images take the full width of the parent container */
+    height: auto;      /* Maintains aspect ratio */
+}
 
-  /* Overlay to darken background for better text readability */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .carousel-item img {
+        width: 100%;  /* Full width for mobile */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensures no stretching */
+    }
+}
+/* Forvery small screens */
+@media (max-width: 480px) {
+    .carousel-item {
+        min-height: 150px; /* Further reduce height on very small screens */
+    }
+}
+
+
+
+
+
+    
+    
+    
+    @keyframes colorChange {
+    0% { color: red; }
+    33% { color: blue; }
+    67% { color: green; }
+    100% { color: red; }
+}
+
+/* Applying animation to the text */
+.animated-text {
+    color: dark; /* Base color */
+    font-weight: bold;
+    background-color: #fff; /* Optional: background color for contrast */
+    padding: 0.5rem 1rem;
+    font-size: 2rem; /* Increased font size */
+    border-radius: 0.25rem;
+    animation: colorChange 3s infinite; /* Animation duration and repeat */
+}
+    html, body {
     width: 100%;
-    height: 100%;
-
-    z-index: 1;
-  }
-
-  /* Text Centering and Styling */
-  .text-center {
-    position: relative;
-    z-index: 2; /* Ensures text appears above overlay */
-    text-align: center;
-  }
-
-  /* Title Text Styling */
-  h1 {
-    color: rgb(255, 255, 255);
-    font-size: 48px;
-    margin-top: -50px;
-  }
-
-  /* Apply Now Button Styling */
-  h2 a {
-    background-color: yellow;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    font-size: 24px;
-  }
-
-  h3 {
     margin: 0;
-  }
+    padding: 0;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+}
 
-  /* Media query for mobile devices */
-  @media (max-width: 768px) {
-    .hero {
-      height: auto;
-      padding: 50px 20px;
-      border-width: 5px; /* Adjust border width for smaller screens */
-    }
+.container-fluid, .container {
+    width: 100% !important;
+    padding: 0 !important; /* Remove extra padding */
+}
 
-    h1 {
-      font-size: 28px;
-      margin-top: -100px;
-      padding: 0 10px;
-    }
 
-    h2 a {
-      padding: 8px 15px;
-      font-size: 18px;
-    }
+/* Navbar */
+.navbar, .navbar-collapse {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
-    h3 {
-      font-size: 18px;
-    }
-  }
+/* Full width for other sections */
+.section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+html, body {
+    overflow: visible; /* Ensure no hidden or scroll overflow */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 
-  /* Additional media query for extra small screens */
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 24px;
-      margin-top: -80px;
-    }
+.container {
+    width: 90%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-    h2 a {
-      padding: 6px 10px;
-      font-size: 16px;
-    }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-    h3 {
-      font-size: 16px;
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.about-text {
+    text-align: center;
+    width: 100%;
+}
+.about-section {
+    display: flex;
+    flex-direction: column; /* Adjust layout for mobile */
+    align-items: center;
+    width: 100%;
+}
+
+.about-section img {
+    max-width: 100%; /* Ensure images resize on mobile */
+}
+@media only screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
     }
-  }
+}
+
+
+
 </style>
 
+</head>
+
+<body style="background-color:rgb(255, 255, 255);" >  
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 sticky-navbar" 
+    style="position: sticky; top: 0; z-index: 1000; background-color: rgb(240, 237, 237); width: 100%;">
+   <!-- Navbar brand or logo -->
+   <a class="navbar-brand ml-3" href="#home" style="font-weight: bold; font-size: 36px; color: red;">NC-CCIT</a>
+
+   <!-- Toggler button for mobile view -->
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" 
+           style="border: none; outline: none;">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <!-- Collapsible content -->
+   <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse"
+        style="background-color:rgb(253, 253, 253); max-width: 100%; padding-left: 0; padding-right: 0;">
+       <div class="navbar-nav py-0 mx-auto" 
+            style="display: flex; align-items: center; flex-wrap: wrap; justify-content: space-around;">
+           <a href="#home" class="nav-item nav-link" style="padding: 0.5rem; font-weight: bold;color:black;">Home</a>
+           <a href="#about" class="nav-item nav-link" style="padding: 0.5rem;color:black;">About</a>
+           <a href="#courses" class="nav-item nav-link" style="padding: 0.5rem;color:black;">Courses</a>
+           <a href="#contact" class="nav-item nav-link" style="padding: 0.5rem;color:black;">Contact Us</a>
+           <a href="#enquire" class="nav-item nav-link" style="padding: 0.5rem;color:black;">Enquire</a>
+           <!-- <a href="#testimonials" class="nav-item nav-link" style="padding: 0.5rem;">Testimonials</a> -->
+       </div>
+   </div>
+</nav>
+<script>
+    window.onscroll = function() {
+        var navbar = document.querySelector('.navbar');
+        if (window.pageYOffset > 0) {
+            navbar.style.position = 'fixed';
+            navbar.style.top = '0';
+        } else {
+            navbar.style.position = 'relative';
+        }
+    };
+    
+</script>
 
 
+    <!-- Add Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Add jQuery (required for Bootstrap 4) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Add Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<!-- Add Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Add Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
+    
+    <!-- Navbar End -->
 
-<h3 style="color:rgb(2, 2, 2);background-color:rgb(255, 229, 217); text-align: center;">NAAC A+ accredited    &nbsp&nbsp&nbsp&nbsp;UGC-entitled</h3>
 
-
-	
-		
-	
-		
-		
-		
-		
-			
-				
-		<br>
-		<br>		
-				
-					
-									
-<div class="box_list home" style="color:black;background: hsla(33, 100%, 53%, 1);background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#FF930F', endColorstr='#FFF95B', GradientType=1 );">
-    <div class="row" style="background: rgb(255, 229, 217);">
-        <div class="col-lg-1 col-md-1 col-1"></div>
-        <div class="col-lg-10 col-md-10 col-10 d-flex justify-content-between align-items-center">
-            <div class="d-flex flex-column align-items-center">
-                <i class="icon-clock-2"></i><b>Duration</b><br/>
-                3 Years Program
-            </div>
-            <div class="d-flex flex-column align-items-center">
-                <i class="icon-clock-2"></i><b>Eligibility</b><br/>
-                12th Pass from recognized Board or equivalent
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 mb-5" id="home">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel" >
+                    <ol class="carousel-indicators" style="margin-left:200px; margin-bottom:-500px;">
+                        
+                    </ol>
+                    <div class="carousel-inner" style="border: 5px solid black;">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 img-fluid" src="img/course.jpg" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-fluid" src="img/courses list.jpg" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-fluid" src="img/stu.jpg" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-lg-1 col-md-1 col-1"></div>
     </div>
-</div>
+    
+    
+    
+    
+    <!-- Carousel End -->
 
-
-
-					
-					
-				
-				<!--<p class="text-center add_top_30"><a href="#" class="btn_1 medium"><i class="icon-th-large-outline"></i> View all Courses</a></p> -->
-			
-			
-		
-				<div class="bg_color_1" style="background-color:rgba(254, 197, 187);">
-					<div class="container">
-						<div class="row d-flex justify-content-between">
-							<div class="col-lg-4 col-md-4 col-4">
-								<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">03</h3>
-								<p><strong style="font-size:1.2em">Years</strong><br>Bachelor Degree</p>
-							</div>
-							<div class="col-lg-4 col-md-4 col-4">
-								<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">36</h3>
-								<p><strong style="font-size:1.2em">Months</strong><br>Duration</p>
-							</div>
-							<div class="col-lg-4 col-md-4 col-4">
-								<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">06</h3>
-								<p><strong style="font-size:1.2em">Semester</strong><br>Programme</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-		
-		<div class="bg_color_1">
-			<div class="container ">			
-				<div class="row">
-					<div class="col-lg-12">
-						<br>
-                       
-						<h3 align="center" style="color: black;">About B.B.A. Programme</h3><br>
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about" style="background-color:rgb(255, 255, 255); margin-top:-150px;">
+        <div class="container py-5">
+            <h2 class="text2-primary text-uppercase mb-3" style="letter-spacing: 5px; color:red;text-align:center;">WELCOME TO NC-CCIT</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    
+                    <div class="container">
                         
-						
-						<p align="justify" style="color: black;">University online Bachelor of Business Administration.
-                            This BBA program provides students with a comprehensive education that emphasizes critical thinking, effective communication, and strong analytical skills. The university offers mentorship to guide students in realizing their full potential and acquiring the skills and knowledge necessary for success in the business world. </p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		
-		<div class="bg_color_1" style="background:rgb(221, 161, 94);color:black">
-			<div class="container blist">			
-				<div class="row">
-					<div class="col-lg-6">
-						<img style="height:100%;" class="img img-responsive" src="img/BA 500X404 01.png">
-					</div>
-					<div class="col-lg-6">
-					<br><br>
-					<h4 style="color:rgb(0, 0, 0);font-family:'Times New Roman;'">Highlights of Online Mode Program </h4>
-					<ul  style="padding-left: 15px;line-height:35px;">
-						<li>UGC entitled program</li>
-						<li>Degree at par with regular Mode</li>
-						<li>Quality education any time, any where, at any place</li>
-						<li>User-friendly learning management system</li>
-						<li>Wide range of electives and Specialization to choose from</li>
-						<li>Curriculum designed to enhance critical and creative abilities</li>
-						<li>Opportunities of research, entrepreneurship	and startups</li>
-						<li>Career Counselling and Placement Guidance</li>
-						<li>Online examination	</li>						   
-					  </ul>
-					</div>
-					
-				</div>			
-			</div>
-		</div>
-		
-			<div class="bg_color_1" >
-			<div class="container ">			
-				<div class="row">
-					<div class="col-lg-12">
-						<br><br>
-						
-						<h3 align="center" style="color:black">Benefits of an Online B.B.A.</h3>					
-										
-						
-						<p style="color:black"><strong>Flexibility:</strong> Students can complete coursework at their own pace and on their own schedule, making it easier to balance education with work and family commitments and pursue career, hobbies, studies, all at the same time.</p>
-						
-						<p style="color:black"><strong>Accessibility:</strong> Online B.B.A. programs can be completed from anywhere in the world through Online classes and recorded lectures  making it possible for students to pursue a B.B.A. degree without relocating or commuting and prepare for government exams.</p>
-						<p style="color:black"><strong>Affordability:</strong> Online B.B.A. programs are often less expensive than traditional on-campus programs, making it a more accessible option for students who are concerned about the cost of higher education.</p>
-						
-						<p style="color:black"><strong>Diverse career opportunities:</strong> Online B.B.A. programs attracts diverse students, including working professionals from a wide range of sectors and geographic locations.</p>
-						<p style="color:black"><strong>Career advancement:</strong> An online B.B.A. can help students advance their careers by providing them with the knowledge, skills, and credentials necessary to pursue leadership positions within their organizations.</p>
-						<!--
-						<p><strong>Networking opportunities:</strong> Online B.A. programs offer opportunities to connect with other students, alumni, and industry professionals, providing valuable networking opportunities that can lead to career opportunities and business partnerships.</p>
-												
-						-->
-					
-						
-						<!--
-						<h5>Research and Innovation:</h5>
-						<p>MCA programs train learners to undertake research projects and carry out other doctoral degree and fellowships. Online MCA can be a stepping stone for higher studies.</p>
-						
-						<h5>Job Opportunities:</h5>
-						<p>This Online Degree upholds the position of software developers, systems analysts, database administrators, network administrators, cyber security specialists, IT consultants, and project managers etc which are highly rewarding and well-paying jobs.</p>
-						-->
-						
-						<p style="color:black"><strong>Personal and Professional Growth:</strong>Personal and professional growth opportunities prepare students for success in their careers and contribute to their overall development.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	
+                        <div class="d-flex" >
+                            
+                            <div class="me-3" style="margin-right: 10px;">
+                                <img style="width: 200px; height: 200px; border: 10px;" class="img-fluid rounded mb-4" src="img/mana.jpg" alt="">
+                            </div>
+                            <div style="margin-right: 10px;">
+                                <img style="width: 200px; height: 200px; border: 10px;" class="img-fluid rounded mb-4" src="img/nee.jpeg" alt="">
+                            </div>
+                            <div>
+                                <img style="width: 200px; height: 200px; border: 10px;" class="img-fluid rounded mb-4" src="img/team-4.jpg" alt="">
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    
+                    <div class="d-flex justify-content-between mb-4">
+                        <!-- Manav Sharma Section -->
+                        <div class="flex-fill mr-4">
+                            <h2 style="color:rgb(26, 41, 10) ;">Manav Sharma</h2>
+                            <p style="color: black;">BSC(BIO) <br> MBA(MARKETING & FINANCE) </p>
+                        </div>
+                        <!-- Neetu Sharma Section -->
+                        <div class="flex-fill">
+                            <h2 style="color:rgb(26, 41, 10) ;" >Neetu Sharma</h2>
+                            <p style="color: black; ">BSC(PATHO),BAJM  <br>   MA(ECO),<br>MBA(HRM)</p>
+                        </div>
+                        <div class="flex-fill">
+                            <h2 style="color:rgb(26, 41, 10) ;" >Swati Sharma</h2>
+                            <p style="color: black; "></p>
+                        </div>
+                    </div>
+                  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Category Start -->
+     
         
-		<!-- /container -->
-		
-		
-      
-		
-		
-		<div class="bg_color_1" style="background:rgb(254, 197, 187);color:black">
-			<div class="container blist">			
-				<div class="row">
-					
-					<div class="col-lg-6">
-					<br><br>
-					<h4 style="color:black">Career Opportunities after B.B.A. Program</h4> <ul style="padding-left: 15px; line-height: 30px;"> <li>Business Analyst</li> <li>Marketing Manager</li> <li>Financial Analyst</li> <li>Human Resource Manager</li> <li>Sales Manager</li> <li>Operations Manager</li> <li>Entrepreneur</li> <li>Management Consultant</li> <li>Banking Professional</li> <li>Public Relations Officer (PRO)</li> <li>Project Manager</li> <li>Retail Manager</li> <li>Eligible for UPSC and other competitive exams</li> </ul>
-					</div>
-					<div class="col-lg-6">
-						<img style="height:100%;border:50px solid rgb(254, 197, 187);" class="img img-responsive" src="img/about.jpg">
-					</div>
-				</div>			
-			</div>
-		</div>
-		
-				
-			<div class="container">
-		<br>
-		
-	</div>	
-	
-	<!-- /main -->
-	
-	
-	
 
-	<div id="toTop"></div>
-	<!-- Back to top button -->
-	<script>
-	function blink_text() 
-	{
-		$('.blink').fadeOut(500);
-		$('.blink').fadeIn(500);
-	}
-	setInterval(blink_text, 1500);
+     <div class="container-fluid py-5 mx-3" id="courses" style="margin-top:-150px; margin-left: 10px;">
 
-	</script>
-	<div id="toTop"></div>
-	<!-- Back to top button -->
 
-	<!-- COMMON SCRIPTS -->
-	<script src="js/jquery-2.2.4.min.js"></script>
-	<script src="js/common_scripts.min.js"></script>
-	<script src="js/functions.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-5">
+                <h1 class="textw-primary text-uppercase mb-3" style="letter-spacing: 5px;color:red ;">COURSES</h1>
+                <h1 style="color:rgb(0, 0, 0) ;">Explore Top Courses</h1>
+                <p style="color:rgb(0, 0, 0) ;">Click on courses for more information</p>
+            </div>
+            <div class="row">
+                <!-- Each course -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-5.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="bba.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">BBA</h4>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="bca.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">BCA</h4>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="bcom.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">B.Com</h4>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/course-3.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="ba.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">BA</h4>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Add the rest of your courses here, following the same pattern -->
+                
+            </div>
+            <div class="row">
+                <!-- Each course -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-6.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="mba.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">MBA</h4>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-8.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="mca.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">MCA</h4>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-4.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="mcom.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">M.Com</h4>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-7.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="ma.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">MA</h4>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Add the rest of your courses here, following the same pattern -->
+                
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="bcom(hons).html" target="_blank">
+                            <h4 class="text-white font-weight-medium">B.COM(HONS)</h4>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/course-5.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="ba(jmc).html" target="_blank">
+                            <h4 class="text-white font-weight-medium">BA(JMC)</h4>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/course-1.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="m.lib.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">M.LIB</h4>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/course-2.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="msw.html" target="_blank">
+                            <h4 class="text-white font-weight-medium">MSW</h4>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+                <!-- Each course -->
+                
+                <!-- Add the rest of your courses here, following the same pattern -->
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Category Start -->
+         <!-- contact  -->
+
+         <div class="contact-section py-5" id="contact">
+            <div class="overlay"></div>
+            <div class="container py-5">
+                <h2 class="contact-title mb-4">CONTACT US</h2>
+                <p class="contact-info mb-4">
+                    <a href="tel:+918756245801" class="text-red text-decoration-none">8756245801</a><br>
+                    <a href="tel:+919839084568" class="text-red text-decoration-none">9839084568</a><br>
+
+                    <a href="mailto:nets.shrma18@yahoo.com" class="text-red text-decoration-none">nets.shrma18@yahoo.com</a><br>
+                    <a href="mailto:manavs1411@gmail.com" class="text-red text-decoration-none">manavs1411@gmail.com</a><br>
+                    <span class="contact-address">ADDRESS- CIVIL LINES, KANPUR</span>
+                </p>
+            </div>
+        </div>
+        
+    
+    <!-- GMAP -->
+    
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7412.869526086408!2d80.3470851!3d26.473289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c38a8fbc18b2d%3A0xa1100ec1aa41d4f6!2sCivil%20Lines%2C%20Kanpur%2C%20Uttar%20Pradesh%20208001!5e0!3m2!1sen!2sin!4v1694597823561!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+    
+    
+    
+
+
+    
+
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;" id="enquire">
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-between flex-wrap">
+                <!-- First Column for Text -->
+                <div class="col-lg-7 col-md-6 col-12 mb-5 mb-md-0">
+                    <div class="mb-4">
+                        <h2 class="text2-primary text-uppercase mb-3" style="letter-spacing: 5px; color:white;">
+                            <b>Need Any Courses</b>
+                        </h2>
+                        <h1 style="color: red;">Fill in the form and get your query resolved ASAP!</h1>
+                    </div>
+                </div>
+    
+                <!-- Second Column for the Form -->
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="card border-0">
+                        <div class="card-header bg-light text-center p-4">
+                            <h1 class="m-0" style="color:rgb(13, 13, 14);">ENQUIRE US</h1>
+                        </div>
+                        <div class="card-body rounded-bottom p-5" style="background-color: rgb(134, 3, 3);">
+                            <form action="https://formspree.io/f/meojwkbn" method="POST">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control border-0 p-4" placeholder="Your name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="phone" class="form-control border-0 p-4" placeholder="Your phone number" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control border-0 p-4" placeholder="Your email" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <select id="course" name="course" class="custom-select border-0 px-4" style="height: 47px;" required="required">
+                                        <option value="" disabled selected>Select a course</option>
+                                        <option value="BBA">BBA</option>
+                                        <option value="BCA">BCA</option>
+                                        <option value="B.Com">B.Com</option>
+                                        <option value="BA">BA</option>
+                                        <option value="MBA">MBA</option>
+                                        <option value="MCA">MCA</option>
+                                        <option value="M.Com">M.Com</option>
+                                        <option value="MA">MA</option>
+                                        <option value="B.Com(HONS)">B.Com(HONS)</option>
+                                        <option value="BA(JMC)">BA(JMC)</option>
+                                        <option value="M.LIB">M.LIB</option>
+                                        <option value="MSW">MSW</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit" style="background-color: rgb(240, 181, 157); color:black; font-size: 18px;">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <script>
+                                // Function to get URL parameter
+                                function getParameterByName(name) {
+                                    const urlParams = new URLSearchParams(window.location.search);
+                                    return urlParams.get(name);
+                                }
+                            
+                                // Autofill the course dropdown if the course parameter is present
+                                window.onload = function() {
+                                    const courseParam = getParameterByName('course');
+                                    if (courseParam) {
+                                        let courseDropdown = document.getElementById('course');
+                                        for (let i = 0; i < courseDropdown.options.length; i++) {
+                                            if (courseDropdown.options[i].value.toLowerCase() === courseParam.toLowerCase()) {
+                                                courseDropdown.selectedIndex = i;
+                                                break;
+                                            }
+                                        }
+                                    }
+                                };
+                            </script>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        /* General Styles for Desktop */
+.bg-registration {
+    background-color: #f0f0f0; /* Add a background if needed */
+}
+
+/* Ensure card text scales responsively */
+.card-header h1, .card-body h3 {
+    font-size: 2rem; /* General size */
+}
+
+/* Adjust for mobile phones */
+@media (max-width: 768px) {
+    /* Stacking the columns on mobile */
+    .row.align-items-center {
+        flex-direction: column;
+    }
+
+    /* Adjust form padding on mobile */
+    .card-body {
+        padding: 2rem 1.5rem;
+    }
+
+    /* Adjust header text size on mobile */
+    .card-header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust button font size on mobile */
+    .btn h3 {
+        font-size: 1.2rem;
+    }
+
    
+}
+
+    </style>
+    <!-- Registration End -->
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-fluid py-5" id="testimonials" style="margin-top:-130px;">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="texts-primary text-uppercase mb-3" style="letter-spacing: 5px;color:rgb(134, 3, 3);">Testimonials</h2>
+                <h2 style="color:rgb(26, 41, 10) ;">What Our Students Say</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                           
+                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
+                            <h5 class="m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            
+                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
+                            <h5 class="m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                           
+                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
+                            <h5 class="m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <a href="https://wa.me/918756245801" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-3 px-sm-3 px-lg-5" style="margin-top: 90px; text-align: center;">
+        <div class="row pt-3">
+            <div class="col-lg-7 col-md-12 mx-auto"> <!-- Center the column horizontally -->
+                <div class="row">
+                    <div class="col-md-6 mb-3 text-center mx-auto"> <!-- Center the text -->
+                        <h3 class="texts-primary text-uppercase mb-3" style="letter-spacing: 5px;color:rgb(255, 255, 255);">Get In Touch</h3>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>CIVIL LINES KANPUR</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+91-8756245801</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+91-9839084568</p>
+                        <p><i class="fa fa-envelope mr-2"></i>nets.shrma18@gmail.com</p>
+                        <p><i class="fa fa-envelope mr-2"></i>manavs1411@gmail.com</p>
+                        <!-- <div class="d-flex justify-content-center mt-3"> Center the icons -->
+                            <!-- <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                            <!-- <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a> -->
+                            <!-- <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                            <!-- <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style="background-color: rgb(134, 3, 3);">
+        <i class="fa fa-angle-double-up" style="color: white;"></i>
+    </a>
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
