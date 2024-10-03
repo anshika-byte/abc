@@ -291,7 +291,9 @@
 	/* Media query for mobile devices */
 	@media (max-width: 768px) {
 	  .hero {
-		height:440px;width:420px;
+		height: auto;
+		padding: 50px 20px;
+		border-width: 5px; /* Adjust border width for smaller screens */
 	  }
   
 	  h1 {
@@ -313,8 +315,7 @@
 	/* Additional media query for extra small screens */
 	@media (max-width: 480px) {
 	  h1 {
-		font-size: 24px;
-		margin-top: -80px;
+		height:440px;width:420px;
 	  }
   
 	  h2 a {
