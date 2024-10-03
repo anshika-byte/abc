@@ -3,6 +3,15 @@
 <html lang="en">
 
 <head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZZKC4EPQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MZZKC4EPQW');
+</script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -73,16 +82,18 @@
 	<!--<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64fed4e6ab24060019dda16c&product=sop' async='async'></script>-->
 <style>
     .hero {
-        background-image: url('img/course-3.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 100vh; /* Adjust height as needed */
-        color: white; /* Optional: To ensure text is readable against the background */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	
+		background-size: cover;
+		background-position: center;
+		border: 10px solid black;
+		position: relative;
+	  }
     
     .hero h1, .hero h2, .hero h3 {
         margin: 0;
@@ -204,17 +215,132 @@
 
 
 
-<div class="hero" style="background-image: url('img/oip.jfif'); background-size: cover; background-position: center; opacity: 2">
-    <div class="text-center">
-        <h2 style="color:rgb(255, 255, 255); margin-top :-200px;">NAAC A+ accredited    &nbsp&nbsp&nbsp&nbsp;UGC-entitled</h2>
 
+
+
+<div class="hero" style="height:400px;">
+    <div class="overlay"></div> <!-- Overlay for better text visibility -->
+    <div class="text-center">
+        <!-- Title Text -->
+        <h2 style="color:red; margin-top: -200px;">NAAC A+ accredited &nbsp;&nbsp;&nbsp;&nbsp;UGC-entitled</h2>
         
-       
-       
-        <h2><a href="index.html#enquire" class="btn btn-custom mt-2" style="background-color: yellow;"><h3>Apply Now</h3></a></h2>
-        <br>   
+        <h2>
+            <a href="index.html?course=b.com#enquire" class="btn btn-custom mt-2">
+                <h2 style="background-color: red; color:white;">Apply Now</h2>
+            </a>
+        </h2>   
     </div>
 </div>
+
+<!-- CSS for Styling -->
+<style>
+  /* Ensure proper scaling on all devices */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Hero Section Styling */
+  .hero {
+    width: 100%;
+    min-height: 100vh; /* Use min-height to allow for dynamic height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('img/OIP.jfif');
+    background-size: cover;
+    background-position: center;
+    border: 10px solid black;
+    position: relative;
+  }
+
+  /* Overlay to darken background for better text readability */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Add semi-transparency */
+    z-index: 1;
+  }
+
+  /* Text Centering and Styling */
+  .text-center {
+    position: relative;
+    z-index: 2; /* Ensures text appears above overlay */
+    text-align: center;
+  }
+
+  /* Title Text Styling */
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    margin-top: -50px;
+  }
+
+  /* Apply Now Button Styling */
+  h2 a {
+    background-color: yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  /* Media query for tablet and mobile devices */
+  @media (max-width: 768px) {
+    .hero {
+      background-size: contain; /* Ensure the image fits within the container on smaller screens */
+      min-height: 100vh; /* Ensure section takes full height */
+      padding: 50px 20px;
+      border-width: 5px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: -100px;
+      padding: 0 10px;
+    }
+
+    h2 a {
+      padding: 8px 15px;
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  /* Additional media query for extra small screens */
+  @media (max-width: 480px) {
+    .hero {
+      background-size: contain; /* Ensure the image is not cut off */
+      min-height: auto; /* Allow the height to be dynamic */
+	  background-repeat: no-repeat;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-top: -80px;
+    }
+
+    h2 a {
+      padding: 6px 10px;
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+</style>
 
 
 	
@@ -223,84 +349,38 @@
 		
 		
 		
-		<div class="bg_color_1">
-			<div class="container">
-			
-				
-				<div class="row">
-				
-					<div class="col-lg-12 col-md-12">
-						<div class="box_list home" style="color:black;background: hsla(33, 100%, 53%, 1);background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#FF930F', endColorstr='#FFF95B', GradientType=1 );">
-						
-							<div class="wrapper">
-								<!--<small>3 Years</small>-->
-								
-								<div class="row">
-									<div class="col-lg-4">
-										<center>
-										<i class="icon-clock-2"></i><b>Duration</b><br/><br/>
-										3 Years Program
-										</center>
-									</div>
-									<div class="col-lg-4">
-										<center>
-										<i class="icon-graduation-cap"></i><b></b><br/><br/>
-										
-										</center>
-									</div>
-								
-								
-								
-									<div class="col-lg-4">
-										<center>
-										<i class="icon-clock-2"></i><b>Eligibility</b><br/><br/>
-										12th Pass from recognized Board or equivalent
-										</center>
-									</div>
-																	
-								</div>
-								
-							</div>
-							<!--
-							<ul>
-								<li>&nbsp;</li>
-								<li><a href="#"><i class="icon-book-open"></i> Know More</a></li>
-							</ul>
-							-->
-						</div>
+		<div class="box_list home" style="color:black;background: hsla(33, 100%, 53%, 1);background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#FF930F', endColorstr='#FFF95B', GradientType=1 );">
+			<div class="row" style="background: white;">
+				<div class="col-lg-1 col-md-1 col-1"></div>
+				<div class="col-lg-10 col-md-10 col-10 d-flex justify-content-between align-items-center">
+					<div class="d-flex flex-column align-items-center">
+						<i class="icon-clock-2"></i><b>Duration</b><br/>
+						3 Years Program
 					</div>
-					
-					
-				</div>	
-				<!--<p class="text-center add_top_30"><a href="#" class="btn_1 medium"><i class="icon-th-large-outline"></i> View all Courses</a></p> -->
-			
+					<div class="d-flex flex-column align-items-center">
+						<i class="icon-clock-2"></i><b>Eligibility</b><br/>
+						12th Pass from recognized Board or equivalent
+					</div>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1"></div>
 			</div>
-			<!-- /container -->
 		</div>
 		
-		<div class="bg_color_1" style="background: hsla(175, 79%, 63%, 1);background: linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);background: -moz-linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);background: -webkit-linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#57EBDE', endColorstr='#AEFB2A', GradientType=1 );">
-			<div class="container ">			
-				<br>
-				<div class="row">
-					<div class="col-lg-5">
-						
-						<h3 style="font-size:2.9em;color:navy;font-weight:bold">03</h3>
-						<p><strong style="font-size:1.2em">Years</strong><br>Bachelor Degree</p>					
+		<div class="bg_color_1" style="background-color:rgb(228, 226, 226);">
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+					<div class="col-lg-4 col-md-4 col-4">
+						<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">03</h3>
+						<p><strong style="font-size:1.2em">Years</strong><br>Bachelor Degree</p>
 					</div>
-					<div class="col-lg-5">
-						
-						
-						<h3 style="font-size:2.9em;color:navy;font-weight:bold">36</h3>
-						<p><strong style="font-size:1.2em">Months</strong><br>Duration</p>					
-						
+					<div class="col-lg-4 col-md-4 col-4">
+						<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">36</h3>
+						<p><strong style="font-size:1.2em">Months</strong><br>Duration</p>
 					</div>
-					<div class="col-lg-2">
-						
-						<h3 style="font-size:2.9em;color:navy;font-weight:bold">06</h3>
-						<p><strong style="font-size:1.2em">Semester</strong><br>Programme</p>					
+					<div class="col-lg-4 col-md-4 col-4">
+						<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">06</h3>
+						<p><strong style="font-size:1.2em">Semester</strong><br>Programme</p>
 					</div>
-				
-					
 				</div>
 			</div>
 		</div>
@@ -311,7 +391,7 @@
 					<div class="col-lg-12">
 						<br>
                        
-						<h3 align="center">About B.Com Programme</h3><br>
+						<h2 align="center" style="color: red;"> About B.Com Programme</h2><br>
                         
 						
 						<p align="justify">
@@ -328,7 +408,7 @@
         <div class="container margin_60"></div>
 			<div class="row">				
 				<div class="col-xl-12 col-lg-12">
-					<h4 style="text-align: center;">B.COM (ONLINE) Course Structure</h4><br>
+					<h4 style="text-align: center;color:black">B.COM (ONLINE) Course Structure</h4><br>
 					<div class="tabs_styled_2">
 						<ul class="nav nav-tabs" role="tablist">
 							<li class="nav-item">
@@ -350,8 +430,8 @@
 								    <table class="table table-striped table-bordered">
 									  <thead>
 											<tr>
-											<th colspan="3" style="outline: 3px solid navy;border:6px solid white;text-align:center;background:#4287f5;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i>  Semester I</th>
-											<th colspan="3" style="outline: 3px solid navy;border:6px solid white;text-align:center;background:#4287f5;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i> Semester II</th>
+											<th colspan="3" style="outline: 3px solid black;border:6px solid white;text-align:center;background:#d3373d;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i>  Semester I</th>
+											<th colspan="3" style="outline: 3px solid black;border:6px solid white;text-align:center;background:#d3373d;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i> Semester II</th>
 										</tr>
 										<tr>
 											<th>S.No</th>
@@ -410,8 +490,8 @@
 								   <table class="table table-striped table-bordered">
 									  <thead>
 										<tr>
-										<th colspan="3" style="outline: 3px solid navy;border:6px solid white;text-align:center;background:#4287f5;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i>  Semester III</th>
-										<th colspan="3" style="outline: 3px solid navy;border:6px solid white;text-align:center;background:#4287f5;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i> Semester IV</th>
+										<th colspan="3" style="outline: 3px solid black;border:6px solid white;text-align:center;background:#d3373d;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i>  Semester III</th>
+										<th colspan="3" style="outline: 3px solid black;border:6px solid white;text-align:center;background:#d3373d;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i> Semester IV</th>
 									</tr>
 										<tr>
 											<th>S.No</th>
@@ -462,8 +542,8 @@
 									 <table class="table table-striped table-bordered">
 									  <thead>
 										<tr>
-											<th colspan="3" style="outline: 3px solid navy;border:6px solid white;text-align:center;background:#4287f5;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i>  Semester V</th>
-											<th colspan="3" style="outline: 3px solid navy;border:6px solid white;text-align:center;background:#4287f5;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i> Semester VI</th>
+											<th colspan="3" style="outline: 3px solid black;border:6px solid white;text-align:center;background:#d3373d;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i>  Semester V</th>
+											<th colspan="3" style="outline: 3px solid black;border:6px solid white;text-align:center;background:#d3373d;color:white" width="50%"><i class="icon-calendar" style="color:yellow;font-size:30px;"></i> Semester VI</th>
 										</tr>
 										<tr>
 											<th>S.No</th>
@@ -519,7 +599,7 @@
 		</div>
 		
 		
-		<div class="bg_color_1" style="background:#5cbd50;color:black">
+		<div class="bg_color_1" style="background:#d3373d;color:black">
 			<div class="container blist">			
 				<div class="row">
 					<div class="col-lg-6">
@@ -527,7 +607,7 @@
 					</div>
 					<div class="col-lg-6">
 					<br><br>
-					<h4 style="color:yellow;font-family:'Times New Roman;'">Highlights of Online Mode Program </h4>
+					<h4 style="color:rgb(255, 255, 255);font-family:'Times New Roman;'">Highlights of Online Mode Program </h4>
 					<ul  style="padding-left: 15px;line-height:35px;">
 						<li>UGC entitled program</li>
 						<li>Degree at par with regular Mode</li>
@@ -551,7 +631,7 @@
                     <div class="col-lg-12">
                         <br><br>
                         
-                        <h3 align="center">Benefits of an Online B.Com</h3>
+                        <h3 align="center"  style="color:rgb(0, 0, 0);">Benefits of an Online B.Com</h3>
                         
                         <p><strong>Flexibility:</strong> Students can complete coursework at their own pace and on their own schedule, making it easier to balance education with work and family commitments and pursue career, hobbies, studies, all at the same time.</p>
                         
@@ -584,13 +664,13 @@
       
 		
 		
-		<div class="bg_color_1" style="background:#faf9c5; color:black;">
+		<div class="bg_color_1" style="background:#d3373d;color:black">
             <div class="container blist">            
                 <div class="row">
                     
                     <div class="col-lg-6">
                         <br><br>
-                        <h4 style="color:black">Job Opportunities after B.Com Program</h4>
+                        <h4 style="color:rgb(255, 255, 255)">Job Opportunities after B.Com Program</h4>
                         <ul style="padding-left: 15px; line-height: 30px;">
                             <li>Account Executive</li>
                             <li>Tax Accountant</li>
@@ -606,7 +686,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-6">
-                        <img style="height:100%; border-left:50px solid maroon; border-right:50px solid maroon;" class="img img-responsive" src="img/about.jpg">
+                        <img style="height:100%; border-left:50px solid #d3373d; border-right:50px solid maroon;" class="img img-responsive" src="img/about.jpg">
                     </div>
                 </div>            
             </div>
