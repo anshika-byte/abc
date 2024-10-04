@@ -77,7 +77,7 @@
 	</style>
 </head>
 
-<body>
+<body style="background-color: rgb(247, 247, 247);">
 
 	<!--<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64fed4e6ab24060019dda16c&product=sop' async='async'></script>-->
 <style>
@@ -94,7 +94,7 @@
     }
     
     .hero h1, .hero h2, .hero h3 {
-        margin: 0;
+        margin: 20px;
         padding: 0;
     }
     
@@ -133,10 +133,7 @@
 	{
 		border-radius:3px;
 	}
-	#link_1,#link_2,#link_2
-	{
-		
-	}
+	
 }
 
 @media screen and (max-width: 600px) {
@@ -211,189 +208,209 @@
 -->
 
 
-<div class="hero" style="background-image: url('img/mba2.jpg'); background-size: cover; background-position: center; opacity: 2">
+<!-- Main Container for Hero Section -->
+<!-- Main Container for Hero Section with Background Overlay -->
+<div class="hero">
+    <div class="overlay"></div> <!-- Overlay for better text visibility -->
     <div class="text-center">
-        <h1 style="color:rgb(0, 0, 0); margin-top: -200px;">M.B.A. - Master of Business Administration</h1>
+        <!-- Title Text -->
+        <h1 style="color: rgb(0, 0, 0);"">M.B.A. - Master of Business Administration</h1>
 
-        
-
-		<h2 >
+        <!-- Apply Now Button -->
+        <h2 >
 			<a href="index.html?course=mba#enquire" class="btn btn-custom mt-2">
 				<h2 style="background-color: red;color:white;">Apply Now</h2>
 			</a>
 			
-        </h2>  
-        <br>   
-   
+        </h2>
     </div>
 </div>
 
+<!-- CSS for Styling -->
 <style>
-	/* Ensure proper scaling on all devices */
-	* {
-	  box-sizing: border-box;
-	}
-  
-	/* Hero Section Styling */
-	.hero {
-	  width: 100%;
-	  height: 100vh;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  position: relative;
-	  
-	  background-size: cover;
-	  background-position: center;
-	  
-	  position: relative;
-	}
-  
-	/* Overlay to darken background for better text readability */
-	.overlay {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-  
-	  z-index: 1;
-	}
-  
-	/* Text Centering and Styling */
-	.text-center {
-	  position: relative;
-	  z-index: 2; /* Ensures text appears above overlay */
-	  text-align: center;
-	}
-  
-	/* Title Text Styling */
-	h1 {
-	  color: rgb(255, 255, 255);
-	  font-size: 48px;
-	  margin-top: -50px;
-	}
-  
-	/* Apply Now Button Styling */
-	h2 a {
-	  background-color: yellow;
-	  padding: 10px 20px;
-	  text-decoration: none;
-	  color: black;
-	  display: inline-block;
-	  font-size: 24px;
-	}
-  
-	h3 {
-	  margin: 0;
-	}
-  
-	/* Media query for mobile devices */
-	@media (max-width: 768px) {
-	  .hero {
-		height: auto;
-		padding: 50px 20px;
-		border-width: 5px; /* Adjust border width for smaller screens */
-	  }
-  
-	  h1 {
-		font-size: 28px;
-		margin-top: -100px;
-		padding: 0 10px;
-	  }
-  
-	  h2 a {
-		padding: 8px 15px;
-		font-size: 18px;
-	  }
-  
-	  h3 {
-		font-size: 18px;
-	  }
-	}
-  
-	/* Additional media query for extra small screens */
-	@media (max-width: 480px) {
-	  .hero {
-		height:440px;width:430px;
-	  }
-  
-	  h2 a {
-		padding: 6px 10px;
-		font-size: 16px;
-	  }
-  
-	  h3 {
-		font-size: 16px;
-	  }
-	}
-  </style>
+  /* Ensure proper scaling on all devices */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Hero Section Styling */
+  .hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('img/mba2.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 10px solid black;
+    position: relative;
+  }
+
+  /* Overlay to darken background for better text readability */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+  }
+
+  /* Text Centering and Styling */
+  .text-center {
+    position: relative;
+    z-index: 2; /* Ensures text appears above overlay */
+    text-align: center;
+  }
+
+  /* Title Text Styling */
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    margin-top: -50px;
+  }
+
+  /* Apply Now Button Styling */
+  h2 a {
+    background-color: yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .hero {
+      height: auto;
+      padding: 50px 20px;
+      border-width: 5px; /* Adjust border width for smaller screens */
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: -100px;
+      padding: 0 10px;
+    }
+
+    h2 a {
+      padding: 8px 15px;
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  /* Additional media query for extra small screens */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+      margin-top: -80px;
+    }
+
+    h2 a {
+      padding: 6px 10px;
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+</style>
+
+
+
+
+
+
 <h3 style="color:rgb(2, 2, 2);background-color:rgb(228, 226, 226); text-align: center;">NAAC A+ accredited    &nbsp&nbsp&nbsp&nbsp;UGC-entitled</h3>
+
 
 	
 		
-
+	
 		
 		
 		
-        <div class="box_list home" style="color:black;background: hsla(33, 100%, 53%, 1);background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#FF930F', endColorstr='#FFF95B', GradientType=1 );">
-            <div class="row" style="background: rgb(255, 255, 255);">
-                <div class="col-lg-1 col-md-1 col-1"></div>
-                <div class="col-lg-10 col-md-10 col-10 d-flex justify-content-between align-items-center">
-                    <div class="d-flex flex-column align-items-center">
-                        <i class="icon-clock-2"></i><b>Duration</b><br/>
-                        3 Years Program
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <i class="icon-clock-2"></i><b>Eligibility</b><br/>
-                        12th Pass from recognized Board or equivalent
-                    </div>
-                </div>
-                <div class="col-lg-1 col-md-1 col-1"></div>
+		
+			
+		
+					
+									
+<div class="box_list home" style="color:black;background: hsla(33, 100%, 53%, 1);background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#FF930F', endColorstr='#FFF95B', GradientType=1 );">
+    <div class="row" style="background: rgb(255, 255, 255);">
+        <div class="col-lg-1 col-md-1 col-1"></div>
+        <div class="col-lg-10 col-md-10 col-10 d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column align-items-center">
+                <i class="icon-clock-2"></i><b>Duration</b><br/>
+                2 Years Program
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <i class="icon-clock-2"></i><b>Eligibility</b><br/>
+                Bachelor's Degree from a recognized University or equivalent
             </div>
         </div>
-                            
-                    <!--<p class="text-center add_top_30"><a href="#" class="btn_1 medium"><i class="icon-th-large-outline"></i> View all Courses</a></p> -->
-                    
-                    
-                
-                        <div class="bg_color_1" style="background-color:rgb(228, 226, 226);">
-                            <div class="container">
-                                <div class="row d-flex justify-content-between">
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">02</h3>
-                                        <p><strong style="font-size:1.2em">Years</strong><br>Master Degree</p>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">12</h3>
-                                        <p><strong style="font-size:1.2em">Months</strong><br>Duration</p>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">04</h3>
-                                        <p><strong style="font-size:1.2em">Semester</strong><br>Programme</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-		
+        <div class="col-lg-1 col-md-1 col-1"></div>
+    </div>
+</div>
+
+
+
+					
+					
 				
+				<!--<p class="text-center add_top_30"><a href="#" class="btn_1 medium"><i class="icon-th-large-outline"></i> View all Courses</a></p> -->
+			
+			
+		
+				<div class="bg_color_1" style="background-color:rgb(228, 226, 226);">
+					<div class="container">
+						<div class="row d-flex justify-content-between">
+							<div class="col-lg-4 col-md-4 col-4">
+								<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">02</h3>
+								<p><strong style="font-size:1.2em">Years</strong><br>Bachelor Degree</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-4">
+								<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">24</h3>
+								<p><strong style="font-size:1.2em">Months</strong><br>Duration</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-4">
+								<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">04</h3>
+								<p><strong style="font-size:1.2em">Semester</strong><br>Programme</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		
 		<div class="bg_color_1">
 			<div class="container ">			
 				<div class="row">
 					<div class="col-lg-12">
 						<br>
                        
-						<h2 align="center" style="color: red;">About M.B.A. Programme</h3><br>
+                        <h2 align="center" style="color: red;">About M.B.A. Programme</h3><br>
                         
 						
-						<p align="justify"style="color:black;">Management is the combined efforts of people within a process to achieve the common objectives of an organization.University's M.B.A. degree program is offered with various specializations. It trains students with professional and practical management practices in all the functional areas that are essential for the effective, sustainable and holistic development. Students will be able to use a range of strategies to achieve their business goals. The University Online M.B.A. program catalyses advanced, up-to-date and progressive managerial knowledge through continuous management education, elevating entrepreneurial, managerial, and leadership qualities.University's Two Years Online M.B.A. courses will train you to be the future manager of an organization. Managers use a variety of approaches to deal with different situations in the workplace, depending on the specific context and circumstances. Effective management is essential for the success of any organization, as it helps to ensure that resources are used efficiently, risks are managed effectively, and objectives are achieved in a timely and effective manner. M.B.A.'s salaries can vary widely depending on factors such as industry, company size, geographic location, and level of experience. Manager's can expect their salaries to increase as they gain more experience and take on more responsibility within their organizations. </p>
-					</div>
+                            <p align="justify"style="color:black;">Management is the combined efforts of people within a process to achieve the common objectives of an organization.University's M.B.A. degree program is offered with various specializations. It trains students with professional and practical management practices in all the functional areas that are essential for the effective, sustainable and holistic development. Students will be able to use a range of strategies to achieve their business goals. The University Online M.B.A. program catalyses advanced, up-to-date and progressive managerial knowledge through continuous management education, elevating entrepreneurial, managerial, and leadership qualities.University's Two Years Online M.B.A. courses will train you to be the future manager of an organization. Managers use a variety of approaches to deal with different situations in the workplace, depending on the specific context and circumstances. Effective management is essential for the success of any organization, as it helps to ensure that resources are used efficiently, risks are managed effectively, and objectives are achieved in a timely and effective manner. M.B.A.'s salaries can vary widely depending on factors such as industry, company size, geographic location, and level of experience. Manager's can expect their salaries to increase as they gain more experience and take on more responsibility within their organizations. </p>
+                        </div>
 				</div>
 			</div>
 		</div>
 
 
-		<div class="container margin_60">
+        <div class="container margin_60">
 			<div class="row">
 				
 				
@@ -667,7 +684,8 @@
 		</div>
 		
 		
-		<div class="bg_color_1" style="background:#d3373d;color:black;">
+		
+		<div class="bg_color_1" style="background:#d3373d;color:black">
 			<div class="container blist">			
 				<div class="row">
 					<div class="col-lg-6">
@@ -675,7 +693,7 @@
 					</div>
 					<div class="col-lg-6">
 					<br><br>
-					<h4 style="color:rgb(255, 255, 255);font-family:'Times New Roman;'">Highlights of Online Mode Program </h4>
+					<h4 style="color:white;font-family:'Times New Roman;'">Highlights of Online Mode Program </h4>
 					<ul  style="padding-left: 15px;line-height:35px;">
 						<li>UGC entitled program</li>
 						<li>Degree at par with regular Mode</li>
@@ -693,7 +711,7 @@
 			</div>
 		</div>
 		
-			<div class="bg_color_1">
+			<div class="bg_color_1" >
 			<div class="container ">			
 				<div class="row">
 					<div class="col-lg-12">
@@ -741,12 +759,6 @@
 	
         
 		<!-- /container -->
-         
-		>
-		<!-- /container -->
-		
-		
-		
 		
 		
       
@@ -785,6 +797,8 @@
 		<br>
 		
 	</div>	
+	
+	<!-- /main -->
 	
 	
 	
