@@ -3,6 +3,15 @@
 <html lang="en">
 
 <head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZZKC4EPQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MZZKC4EPQW');
+</script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -68,7 +77,7 @@
 	</style>
 </head>
 
-<body>
+<body style="background-color: rgb(247, 247, 247);">
 
 	<!--<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64fed4e6ab24060019dda16c&product=sop' async='async'></script>-->
 <style>
@@ -85,7 +94,7 @@
     }
     
     .hero h1, .hero h2, .hero h3 {
-        margin: 0;
+        margin: 20px;
         padding: 0;
     }
     
@@ -124,10 +133,7 @@
 	{
 		border-radius:3px;
 	}
-	#link_1,#link_2,#link_2
-	{
-		
-	}
+	
 }
 
 @media screen and (max-width: 600px) {
@@ -191,7 +197,7 @@
   }
 }
 */
-}
+
 </style>
 <!--
 <div style="width:100%;color:white;padding-top:7px;height:35px;background: rgb(225,235,62);background: linear-gradient(199deg, rgba(225,235,62,1) 0%, rgba(38,195,70,1) 53%, rgba(3,167,36,1) 92%);">
@@ -202,106 +208,192 @@
 -->
 
 
-<div class="hero" style="background-image: url('img/ma.webp'); background-size:cover; border: 25px solid black;background-position: center; opacity: 2">
+<!-- Main Container for Hero Section -->
+<!-- Main Container for Hero Section with Background Overlay -->
+<div class="hero">
+    <div class="overlay"></div> <!-- Overlay for better text visibility -->
     <div class="text-center">
-        
-        
-
-        <h2><a href="index.html#enquire" class="btn btn-custom mt-2" style="background-color: yellow;"><h3>Apply Now</h3></a></h2>
-        <br>   
-   
+        <!-- Title Text -->
+       
+        <!-- Apply Now Button -->
+        <h2 >
+			<a href="index.html?course=maa#enquire" class="btn btn-custom mt-2">
+				<h2 style="background-color: red;color:white;">Apply Now</h2>
+			</a>
+			
+        </h2>
     </div>
 </div>
-<h2 style="color:rgb(2, 2, 2);background-color:#cfa06d; text-align: center;">NAAC A+ accredited    &nbsp&nbsp&nbsp&nbsp;UGC-entitled</h2>
+
+<!-- CSS for Styling -->
+<style>
+  /* Ensure proper scaling on all devices */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Hero Section Styling */
+  .hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('img/MA.webp');
+    background-size: cover;
+    background-position: center;
+    border: 10px solid black;
+    position: relative;
+  }
+
+  /* Overlay to darken background for better text readability */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+  }
+
+  /* Text Centering and Styling */
+  .text-center {
+    position: relative;
+    z-index: 2; /* Ensures text appears above overlay */
+    text-align: center;
+  }
+
+  /* Title Text Styling */
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    margin-top: -50px;
+  }
+
+  /* Apply Now Button Styling */
+  h2 a {
+    background-color: yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .hero {
+      height: auto;
+      padding: 50px 20px;
+      border-width: 5px; /* Adjust border width for smaller screens */
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: -100px;
+      padding: 0 10px;
+    }
+
+    h2 a {
+      padding: 8px 15px;
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  /* Additional media query for extra small screens */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+      margin-top: -80px;
+    }
+
+    h2 a {
+      padding: 6px 10px;
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+</style>
+
+
+
+
+
+
+<h3 style="color:rgb(2, 2, 2);background-color:rgb(228, 226, 226); text-align: center;">NAAC A+ accredited    &nbsp&nbsp&nbsp&nbsp;UGC-entitled</h3>
 
 
 	
 		
-	<main>
+	
 		
 		
 		
-		<div class="bg_color_1">
-			<div class="container">
+		
 			
-				
-				<div class="row">
-				
-					<div class="col-lg-12 col-md-12">
-						<div class="box_list home" style="color:black;background: hsla(33, 100%, 53%, 1);background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#FF930F', endColorstr='#FFF95B', GradientType=1 );">
-						
-							<div class="wrapper">
-								<!--<small>3 Years</small>-->
-								
-								<div class="row">
-									<div class="col-lg-4">
-										<center>
-										<i class="icon-clock-2"></i><b>Duration</b><br/><br/>
-										2 Years Program
-										</center>
-									</div>
-									<div class="col-lg-4">
-										<center>
-										<i class="icon-graduation-cap"></i><b></b><br/><br/>
-										
-										</center>
-									</div>
-								
-								
-								
-									<div class="col-lg-4">
-										<center>
-										<i class="icon-clock-2"></i><b>Eligibility</b><br/><br/>
-										Bachelor's Degree from a recognized University or equivalent
-										</center>
-									</div>
-																	
-								</div>
-								
-							</div>
-							<!--
-							<ul>
-								<li>&nbsp;</li>
-								<li><a href="#"><i class="icon-book-open"></i> Know More</a></li>
-							</ul>
-							-->
-						</div>
-					</div>
+		
+					
+									
+<div class="box_list home" style="color:black;background: hsla(33, 100%, 53%, 1);background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#FF930F', endColorstr='#FFF95B', GradientType=1 );">
+    <div class="row" style="background: rgb(255, 255, 255);">
+        <div class="col-lg-1 col-md-1 col-1"></div>
+        <div class="col-lg-10 col-md-10 col-10 d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column align-items-center">
+                <i class="icon-clock-2"></i><b>Duration</b><br/>
+                2 Years Program
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <center>
+                    <i class="icon-clock-2"></i><b>Eligibility</b><br/><br/>
+                    Bachelor's Degree from a recognized University or equivalent
+                    </center>
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-1"></div>
+    </div>
+</div>
+
+
+
 					
 					
-				</div>	
+				
 				<!--<p class="text-center add_top_30"><a href="#" class="btn_1 medium"><i class="icon-th-large-outline"></i> View all Courses</a></p> -->
 			
-			</div>
-			<!-- /container -->
-		</div>
+			
 		
-		<div class="bg_color_1" style="background: hsla(175, 79%, 63%, 1);background: linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);background: -moz-linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);background: -webkit-linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#57EBDE', endColorstr='#AEFB2A', GradientType=1 );">
-			<div class="container ">			
-				<br>
-				<div class="row">
-					<div class="col-lg-5">
-						
-						<h3 style="font-size:2.9em;color:navy;font-weight:bold">02</h3>
-						<p><strong style="font-size:1.2em">Years</strong><br>Master Degree</p>					
+				<div class="bg_color_1" style="background-color:rgb(228, 226, 226);">
+					<div class="container">
+						<div class="row d-flex justify-content-between">
+							<div class="col-lg-4 col-md-4 col-4">
+								<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">02</h3>
+								<p><strong style="font-size:1.2em">Years</strong><br>Master Degree</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-4">
+								<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">24</h3>
+								<p><strong style="font-size:1.2em">Months</strong><br>Duration</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-4">
+								<h3 style="font-size:2.9em;color:rgb(0, 0, 0);font-weight:bold">04</h3>
+								<p><strong style="font-size:1.2em">Semester</strong><br>Programme</p>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-5">
-						
-						
-						<h3 style="font-size:2.9em;color:navy;font-weight:bold">24</h3>
-						<p><strong style="font-size:1.2em">Months</strong><br>Duration</p>					
-						
-					</div>
-					<div class="col-lg-2">
-						
-						<h3 style="font-size:2.9em;color:navy;font-weight:bold">04</h3>
-						<p><strong style="font-size:1.2em">Semester</strong><br>Programme</p>					
-					</div>
-				
-					
 				</div>
-			</div>
-		</div>
+				
 		
 		<div class="bg_color_1">
 			<div class="container ">			
@@ -309,17 +401,16 @@
 					<div class="col-lg-12">
 						<br>
                        
-						<h3 align="center">About M.A. Programme</h3><br>
-                        
+						<h2 align="center" style="color: red;">About M.A. Programme</h2><br>
 						
-						<p align="justify">The Master of Arts (M.A.) in English is a two-year postgraduate program focusing on the rich history and diverse aspects of English literature, linguistics, and criticism. It delves into significant works from Anglo-Saxon times to modern authors like Shakespeare, Orwell, and Kafka, preparing students to become educators and creative writers. Similarly, the university’s M.A. programs in History, Sociology, and Political Science offer comprehensive insights into their respective fields, emphasizing critical thinking, research, and practical application. Economics, another key offering, explores both micro and macroeconomic principles, analyzing how economies operate and addressing issues like production, employment, and public policy. These programs equip students with advanced knowledge and skills for careers in academia, public service, journalism, and beyond, while also preparing them for national level competitive exams.</p>
+						<p align="justify" style="color: black;">The Master of Arts (M.A.) in English is a two-year postgraduate program focusing on the rich history and diverse aspects of English literature, linguistics, and criticism. It delves into significant works from Anglo-Saxon times to modern authors like Shakespeare, Orwell, and Kafka, preparing students to become educators and creative writers. Similarly, the university’s M.A. programs in History, Sociology, and Political Science offer comprehensive insights into their respective fields, emphasizing critical thinking, research, and practical application. Economics, another key offering, explores both micro and macroeconomic principles, analyzing how economies operate and addressing issues like production, employment, and public policy. These programs equip students with advanced knowledge and skills for careers in academia, public service, journalism, and beyond, while also preparing them for national level competitive exams.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		
 		
-		<div class="bg_color_1" style="background:#e07e50;color:black">
+		<div class="bg_color_1" style="background:#d3373d;color:black">
 			<div class="container blist">			
 				<div class="row">
 					<div class="col-lg-6">
@@ -327,7 +418,7 @@
 					</div>
 					<div class="col-lg-6">
 					<br><br>
-					<h4 style="color:yellow;font-family:'Times New Roman;'">Highlights of Online Mode Program </h4>
+					<h4 style="color:white;font-family:'Times New Roman;'">Highlights of Online Mode Program </h4>
 					<ul  style="padding-left: 15px;line-height:35px;">
 						<li>UGC entitled program</li>
 						<li>Degree at par with regular Mode</li>
@@ -345,68 +436,64 @@
 			</div>
 		</div>
 		
-			<div class="bg_color_1">
+			<div class="bg_color_1" >
 			<div class="container ">			
 				<div class="row">
 					<div class="col-lg-12">
 						<br><br>
 						
-						<h3 align="center">Benefits of an Online M.A.</h3>					
+						<h3 align="center" style="color:black">Benefits of an Online M.A.</h3>					
 										
 						
-						<p><strong>Flexibility:</strong> Students can complete coursework at their own pace and on their own schedule, making it easier to balance education with work and family commitments and pursue career, hobbies, studies, all at the same time.</p>
+						<p style="color:black"><strong>Flexibility:</strong> Students can complete coursework at their own pace and on their own schedule, making it easier to balance education with work and family commitments and pursue career, hobbies, studies, all at the same time.</p>
 						
-						<p><strong>Accessibility:</strong> Online M.A. program can be completed from anywhere in the world through Online classes and recorded lectures making it possible for students to pursue an M.A. degree without relocating or commuting.</p>
-						<p><strong>Affordability:</strong> Online M.A. program are often less expensive than traditional on-campus program, making it a more accessible option for students who are concerned about the cost of higher education.</p>
-						<p><strong>Diverse career opportunities:</strong> Online M.A. program attracts diverse students, including working professionals from a range of industries and geographic locations.</p>
-						<p><strong>Career advancement:</strong> An online M.A. can help students advance their careers by providing them with the knowledge, skills, and credentials necessary to pursue leadership positions within their organizations.</p>
-						<p><strong>Networking opportunities:</strong> Online M.A. program offer opportunities to connect with other students, alumni, and industry professionals, providing valuable networking opportunities that can lead to career opportunities and business partnerships.</p>
+						<p style="color:black"><strong>Accessibility:</strong> Online B.B.A. programs can be completed from anywhere in the world through Online classes and recorded lectures  making it possible for students to pursue a B.B.A. degree without relocating or commuting and prepare for government exams.</p>
+						<p style="color:black"><strong>Affordability:</strong> Online B.B.A. programs are often less expensive than traditional on-campus programs, making it a more accessible option for students who are concerned about the cost of higher education.</p>
+						
+						<p style="color:black"><strong>Diverse career opportunities:</strong> Online B.B.A. programs attracts diverse students, including working professionals from a wide range of sectors and geographic locations.</p>
+						<p style="color:black"><strong>Career advancement:</strong> An online B.B.A. can help students advance their careers by providing them with the knowledge, skills, and credentials necessary to pursue leadership positions within their organizations.</p>
+						<!--
+						<p><strong>Networking opportunities:</strong> Online B.A. programs offer opportunities to connect with other students, alumni, and industry professionals, providing valuable networking opportunities that can lead to career opportunities and business partnerships.</p>
+												
+						-->
+                        <p style="color:black"><strong>Networking opportunities:</strong> Online M.A. program offer opportunities to connect with other students, alumni, and industry professionals, providing valuable networking opportunities that can lead to career opportunities and business partnerships.</p>
 												
 											
-						<p><strong>Industry Collaboration:</strong>Online M.A. Programs an opportunity for practical training in big Corporates for fostering a collaborative learning environment and job opportunities.</p>
+						<p style="color:black"><strong>Industry Collaboration:</strong>Online M.A. Programs an opportunity for practical training in big Corporates for fostering a collaborative learning environment and job opportunities.</p>
 						
-						<p><strong>Industry readiness program:</strong>
+						<p style="color:black"><strong>Industry readiness program:</strong>
 						From the beginning of the final semester, we guide students to be industry ready and for same we mentor them and provide career counselling by experts from all sectors, after interacting effectively, students become future ready professional and thrive at the workplace.					
 						</p>
 						
-					
+						<!--
+						<h5>Research and Innovation:</h5>
+						<p>MCA programs train learners to undertake research projects and carry out other doctoral degree and fellowships. Online MCA can be a stepping stone for higher studies.</p>
 						
-						<p><strong>Personal and Professional Growth:</strong>Personal and professional growth opportunities prepare students for success in their careers and contribute to their overall development.</p>
+						<h5>Job Opportunities:</h5>
+						<p>This Online Degree upholds the position of software developers, systems analysts, database administrators, network administrators, cyber security specialists, IT consultants, and project managers etc which are highly rewarding and well-paying jobs.</p>
+						-->
+						
+						<p style="color:black"><strong>Personal and Professional Growth:</strong>Personal and professional growth opportunities prepare students for success in their careers and contribute to their overall development.</p>
 					</div>
 				</div>
-                <h1 style="color: black;">SPECIALIZATIONS OFFERED</h1>
-    <ul class="specializations">
-        <li>English</li>
-        <li>History</li>
-        <li>Sociology</li>
-        <li>Political Science</li>
-        <li>Economics</li>
-    </ul>
 			</div>
 		</div>
 		
 	
         
 		<!-- /container -->
-         
-		
-		<!-- /container -->
-		<!-- /container -->
-		
-		
-		
 		
 		
       
 		
 		
-		<div class="bg_color_1" style="background:#faf9c5;color:black">
+		<div class="bg_color_1" style="background:#d3373d;color:black">
 			<div class="container blist">			
 				<div class="row">
 					
 					<div class="col-lg-6">
 					<br><br>
-					<h4>Job Opportunities after M.A. Programmes</h4>
+					<h4 style="color:white;">Job Opportunities after M.A. Programmes</h4>
     <ul class="job-opportunities">
         <!-- M.A. in English -->
         <li>Writer/Author</li>
@@ -471,7 +558,7 @@
 
 					</div>
 					<div class="col-lg-6">
-						<img style="height:100%;border-left:50px solid maroon;border-right:50px solid maroon;" class="img img-responsive" src="img/about.jpg">
+						<img style="height:100%;" class="img img-responsive" src="img/about.jpg">
 					</div>
 				</div>			
 			</div>
@@ -482,7 +569,7 @@
 		<br>
 		
 	</div>	
-	</main>
+	
 	<!-- /main -->
 	
 	
