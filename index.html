@@ -378,60 +378,97 @@ img {
     
     
     <!-- Carousel End -->
+     
+     
+<!-- Include Bootstrap CSS and JS -->
 
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about" style="background-color:rgb(255, 255, 255); margin-top:-150px;">
-        <div class="container py-5">
-            <h2 class="text2-primary text-uppercase mb-3" style="letter-spacing: 5px; color:red;text-align:center;">WELCOME TO NC-CCIT</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    
-                    <div class="container">
-                        
-                        <div class="d-flex" >
-                            
-                            <div class="me-3" style="margin-right: 10px;">
-                                <img style="width: 200px; height: 150px; border: 10px;" class="img-fluid rounded mb-4" src="img/mana.jpg" alt="">
-                            </div>
-                            <div style="margin-right: 10px;">
-                                <img style="width: 200px; height: 150px; border: 10px;" class="img-fluid rounded mb-4" src="img/nee.jpeg" alt="">
-                            </div>
-                            <div>
-                                <img style="width: 200px; height: 150px; border: 10px;" class="img-fluid rounded mb-4" src="img/team-4.jpg" alt="">
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    
-                    <div class="d-flex justify-content-between mb-4">
-                        <!-- Manav Sharma Section -->
-                        <div class="flex-fill mr-4">
-                            <h3 style="color:rgb(26, 41, 10) ;">Manav Sharma</h3>
-                            <p style="color: black;">BSC(BIO) <br> MBA(MARKETING & FINANCE) </p>
-                        </div>
-                        <!-- Neetu Sharma Section -->
-                        <div class="flex-fill">
-                            <h3 style="color:rgb(26, 41, 10) ;" >Neetu Sharma</h3>
-                            <p style="color: black; ">BSC(PATHO),BAJM  <br>   MA(ECO),<br>MBA(HRM)</p>
-                        </div>
-                        <div class="flex-fill">
-                            <h3 style="color:rgb(26, 41, 10) ;" >Swati Sharma</h3>
-                            <p style="color: black; "></p>
-                        </div>
-                    </div>
-                  
-                </div>
-                
+<style>
+    .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgb(255, 0, 0); /* Set the icon background to black */
+ 
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    bottom: 20px; /* Position the buttons at the bottom of the image */
+    top: unset;   /* Remove the default top positioning */
+    width: 40px;  /* Adjust the width of the controls */
+    height: 40px; /* Adjust the height of the controls */
+  }
+
+  .carousel-content {
+    text-align: center;
+  }
+ 
+    
+</style>
+<br>
+<br>
+
+
+<div class="container-fluid py-5" id="about" style="background-color:rgb(255, 255, 255); margin-top:-150px;>
+    <div class="container py-5">
+      <h2 class="text2-primary text-uppercase mb-3" style="letter-spacing: 5px; color:red;text-align:center;">WELCOME TO NC-CCIT</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators for sliding (optional) -->
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+  
+        <div class="carousel-inner text-center">
+          <!-- First Slider Item -->
+          <div class="carousel-item active">
+            <div>
+              <img class="d-block img-fluid mx-auto" src="img/mana.jpg" alt="Manav Sharma" style="height:200px;width:200px;">
+              <h3 style="color:rgb(0, 0, 0);">Manav Sharma</h3>
+              <p style="color: black;">BSC(BIO) <br> MBA(MARKETING & FINANCE)</p>
             </div>
+          </div>
+  
+          <!-- Second Slider Item -->
+          <div class="carousel-item">
+            <div>
+              <img class="d-block img-fluid mx-auto" src="img/nee.jpeg" alt="Neetu Sharma" style="height:200px;width:200px;">
+              <h3 style="color:rgb(0, 0, 0);">Neetu Sharma</h3>
+              <p style="color: black;">BSC(PATHO),BAJM <br> MA(ECO),<br>MBA(HRM)</p>
+            </div>
+          </div>
+  
+          <!-- Third Slider Item -->
+          <div class="carousel-item">
+            <div>
+              <img class="d-block img-fluid mx-auto" src="img/team-4.jpg" alt="Swati Sharma" style="height:200px;width:200px;">
+              <h3 style="color:rgb(0, 0, 0);">Swati Sharma</h3>
+              <p style="color: black;">Content for Swati Sharma can go here.</p>
+            </div>
+          </div>
         </div>
+  
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
     </div>
+  </div>
+  
+
+
     <!-- About End -->
 
 
+
     <!-- Category Start -->
+     <br>  <br>  <br> 
      
         
 
